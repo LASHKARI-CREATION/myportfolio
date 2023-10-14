@@ -184,7 +184,7 @@ a {
     align-items: flex-start;
 }
 
-.infolabelprt>p{
+.infolabelprt>p {
     font-weight: 600;
     line-height: 1.8;
     color: #2d2d2d;
@@ -194,33 +194,33 @@ a {
     padding: 0 10px;
 }
 
-.infolabelprt>p:first-child{
+.infolabelprt>p:first-child {
     width: 135px;
 }
 
-.infolabelprt>p:nth-child(2){
+.infolabelprt>p:nth-child(2) {
     width: 30px;
 }
 
-.infolabelprt>p:last-child{
+.infolabelprt>p:last-child {
     color: #999999;
     width: calc(100% - 165px);
     font-weight: normal;
 }
 
-.infolabelprt a{
+.infolabelprt a {
     cursor: pointer;
     text-decoration: none;
 }
 
-.cvdownloadcls{
+.cvdownloadcls {
     margin: 40px 0;
 }
 
-.cvdownloadcls>a{
+.cvdownloadcls>a {
     background: #3e64ff;
     border: 1px solid #3e64ff;
-    color: #fff ;
+    color: #fff;
     cursor: pointer;
     border-radius: 40px;
     box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
@@ -232,20 +232,155 @@ a {
     text-decoration: none;
 }
 
-.workedcmny{
+.workedcmny {
     display: flex;
     justify-content: center;
     margin: 30px 0;
 }
 
-.detailinfo{
+.detailinfo {
     display: flex;
 }
 
-.infolabel{
+.infolabel {
     width: 30%;
 }
 
-.infopart{
-    width: 70%;
+.infopart {
+    /* width: 70%; */
+    width: 100%;
+}
+
+.partofinfo{
+    margin-bottom: 100px;
+}
+
+.clsinfodeetlbl {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3e64ff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.infodescription {
+    display: flex;
+    margin: 40px 0;
+}
+
+.infosvgdiv {
+    margin-right: 40px;
+}
+
+.infosvgdiv>svg {
+    height: 55px;
+    padding: 15px;
+    fill: #ffffff;
+    border-radius: 50%;
+    background: #3e64ff;
+}
+
+.yearofedu {
+    font-size: 16px;
+    color: #3e64ff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.eduname {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.eduinsi {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.eduquote{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.eduquote>li{
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+    letter-spacing: 1px;
+}
+
+
+
+.projhead {
+    text-align: center;
+    margin: 80px 0 30px;
+}
+
+.projhead>h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.projhead>p {
+    font-weight: 400;
+    color: #999999;
+}
+
+.proexpdiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.projimgdiv {
+    /* width: 33.33%; */
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+}
+
+.projimgdiv>img {
+    width: 100%;
+}
+
+.prolbldiv {
+    display: none;
+}
+
+.imghoverdiv {
+    background: #3e64ffad;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.imghoverdiv>h3 {
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+}
+
+.imghoverdiv>span {
+    color: #ffffffcc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
 }
