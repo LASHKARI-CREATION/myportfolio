@@ -140,49 +140,30 @@ $(document).ready(function () {
 
 
 
-// Scrollspy with js
-
-// window.addEventListener('scroll', function () {
-//     const sections = document.querySelectorAll('section');
-//     const navLinks = document.querySelectorAll('nav a');
-
-//     sections.forEach((section, index) => {
-//         const rect = section.getBoundingClientRect();
-//         if (rect.top <= 50 && rect.bottom >= 50) {
-//             navLinks[index].classList.add('active');
-//         } else {
-//             navLinks[index].classList.remove('active');
-//         }
-//     });
-// });
-
-
-
-
 // right click disabled js 
 
-// window.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-// });
+window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
 
 
 
 
 // f12 , ctrl + u , ctrl + shift + i key disabled js 
 
-// document.onkeydown = function (e) {
-//     if (e.key === 'F12' || e.key === 'Control' || e.keyCode == 123) {
-//         e.preventDefault();
-//         return false;
-//     }
+document.onkeydown = function (e) {
+    if (e.key === 'F12' || e.key === 'Control' || e.keyCode == 123) {
+        e.preventDefault();
+        return false;
+    }
 
-//     if (e.ctrlKey && e.key === 'u') {
-//         e.preventDefault();
-//         return false;
-//     }
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+        return false;
+    }
 
-//     if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
-//         e.preventDefault();
-//     }
-// };
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+    }
+};
 
