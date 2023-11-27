@@ -189,3 +189,38 @@ function dcartValue() {
     document.getElementById('numbercrt').value = value;
 }
 
+
+
+
+
+
+
+
+
+
+// right click disabled js 
+
+window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+
+
+
+// f12 , ctrl + u , ctrl + shift + i key disabled js 
+
+document.onkeydown = function (e) {
+    if (e.key === 'F12' || e.key === 'Control' || e.keyCode == 123) {
+        e.preventDefault();
+        return false;
+    }
+
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+        return false;
+    }
+
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+    }
+};
