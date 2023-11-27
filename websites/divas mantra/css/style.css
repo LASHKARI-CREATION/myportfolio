@@ -1,0 +1,2653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: Berkeley Oldstyle Std;
+    src: url(../font/Berkeley.woff2);
+}
+
+@font-face {
+    font-family: AireRomanStd;
+    src: url(../font/AireRomanStd.woff2);
+}
+
+
+:root {
+    --font-small: 14px;
+    --font-vsmall: 11.5px;
+
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+.container {
+    padding: 8px 80px;
+}
+
+.displayflx {
+    display: flex;
+}
+
+.dflxcentr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dflxacenter {
+    display: flex;
+    align-items: center;
+}
+
+.dflxjuscenter {
+    display: flex;
+    justify-content: center;
+}
+
+.dflxflxdc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dflxjseven {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dflxjcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dflxjustsbtwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.allbuttons {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.allbuttons::before,
+.allbuttons::after {
+    position: absolute;
+    content: "";
+    background-color: #1f3b3e;
+    transition: 0.3s ease-out;
+}
+
+.allbuttons::before {
+    height: 100%;
+    width: 100%;
+}
+
+.allbuttons:hover::before {
+    width: 0%;
+}
+
+.allbuttons span {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    padding: 12px 24px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    border: 1px solid #1f3b3e;
+    transition: 0.2s 0.1s;
+}
+
+.allbuttons span:hover {
+    color: rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+}
+
+
+
+
+/* home page css start */
+
+
+
+/* header start  */
+
+
+
+/* header news slide start  */
+
+.headnewstxtslide {
+    display: none;
+}
+
+
+/* Caption text */
+.newshedtext {
+    font-size: 15px;
+    padding: 8px 12px;
+    text-align: center;
+    background: #022e31;
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    padding: 4px 0;
+    animation: hednewsfadslide 4s infinite;
+}
+
+
+/* The dots/bullets/indicators */
+.hednewsliddot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.hednesactiveslide {
+    background-color: #717171;
+}
+
+
+@keyframes hednewsfadslide {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* header news slide end  */
+
+
+
+/* logo div start */
+
+.currncysel {
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    color: #494949;
+    height: 30px;
+    cursor: pointer;
+}
+
+.currncysel:focus-visible {
+    outline: 0;
+}
+
+.hdrsearch {
+    border: 1px solid #c0c0c0;
+    padding: 3px 5px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.hdrsearch>img {
+    width: 15px;
+}
+
+.hdrsearch>input {
+    border: 0;
+    padding: 5px;
+    width: 100px;
+}
+
+.hdrsearch>input:focus-visible {
+    outline: 0;
+}
+
+.hdrcmnylogo {
+    width: 200px;
+}
+
+.hdrcmnylogo>img {
+    width: 100%;
+}
+
+.hdricondiv {
+    padding-left: 50px;
+}
+
+.hdrsvgicon>svg {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* logo div end */
+
+
+
+/* menu list start */
+
+.hdrlistbrdr {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.hdrcatlist>li {
+    list-style-type: none;
+    color: #404040;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 5px 0;
+    transition: color .2s ease-in-out;
+}
+
+.hdrcatlist>li:hover {
+    color: #956a43;
+}
+
+/* menu list end */
+
+
+/* header end  */
+
+
+
+
+
+/* on scroll show header */
+
+.scrollshowdiv {
+    display: none;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 -1px #e0e0e0 inset;
+    box-shadow: 0 -1px #e0e0e0 inset;
+    -webkit-transition: background .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+    transition: background .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+    transition: background .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: background .3s ease-in-out, box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+}
+
+/* on scroll show header */
+
+
+
+
+
+/* banner slide start */
+
+
+.bannerslidecls {
+    display: none;
+}
+
+.bannerslidecls>img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* The dots/bullets/indicators */
+
+.bannerdtsdiv {
+    text-align: center;
+    position: absolute;
+    bottom: 26px;
+    right: 49%;
+}
+
+.bannersliddot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.banneractiveslide {
+    background-color: #ffffff;
+}
+
+/* banner slide end */
+
+
+
+/* imformation div start */
+
+.infodiv>img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* imformation div end */
+
+
+
+/* home product details slider start */
+
+.homeprdtdiv {
+    width: 100%;
+    padding: 8px 50px;
+    position: relative;
+}
+
+.homeprdetitemdiv {
+    width: 16%;
+    position: relative;
+    margin: 0 5px;
+    border: 1px solid #e2e2e2;
+}
+
+.prwishbtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.prwishbtn>svg {
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.homeprdetitemdiv>img {
+    width: 100%;
+    min-width: 178px;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.homeprdtinfodiv {
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    color: #333;
+    fill: #333;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: 1px;
+    width: 90%;
+}
+
+.homeprdtinfodiv>p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ratingdiv>svg {
+    width: 17px;
+}
+
+
+
+/* product home slider css start */
+
+.mySlidesproductcls {
+    display: none
+}
+
+/* Slideshow container */
+.slideshowcls {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.clsprdtprevbtn,
+.clsprdtnextbtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px 17px;
+    margin-top: -22px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: #ffffffcc;
+    box-shadow: 0 2px 10px #36363626;
+    z-index: 1;
+}
+
+.clsprdtprevbtn {
+    left: 5px;
+}
+
+/* Position the "next button" to the right */
+.clsprdtnextbtn {
+    right: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.clsprdtprevbtn:hover,
+.clsprdtnextbtn:hover {
+    background-color: #5c5c5ccc;
+    color: #e9e9e9;
+}
+
+
+
+/* The dots/bullets/indicators */
+.clsmovingprdtdot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.clsactiveprdtdot,
+.clsmovingprdtdot:hover {
+    background-color: #717171;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .clsprdtprevbtn,
+    .clsprdtnextbtn {
+        font-size: 11px
+    }
+}
+
+/* product home slider css end */
+
+/* home product details slider end */
+
+
+
+
+/* latest div start */
+
+.latestlbldiv {
+    margin: 40px 0;
+}
+
+.latestlbl {
+    font-size: 22px;
+    font-family: AireRomanStd;
+}
+
+.latestlbl~p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: AireRomanStd;
+}
+
+.brdrltstcls {
+    background-color: #e4c5b2;
+    width: 100px;
+    height: 1px;
+    margin: 20px 0 0;
+}
+
+.latestimgcls>img {
+    width: 48%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* latest div end */
+
+
+
+/* Celebrations div start */
+
+.celebmaindiv {
+    background-color: #f1ebdf;
+}
+
+.celbparadiv {
+    width: 1280px;
+}
+
+.celbtxtdiv {
+    width: 50%;
+    padding: 16px;
+    text-align: center;
+}
+
+.celebparalabal {
+    font-size: 50px;
+    color: #022e31;
+    font-family: AireRomanStd;
+    text-align: center;
+}
+
+.celeparatxt {
+    font-size: 18px;
+    font-family: Berkeley Oldstyle Std;
+    font-style: italic;
+    color: #404040;
+    text-align: left;
+    line-height: 30px;
+}
+
+.celebimageblock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.wedddiv {
+    width: 50%;
+}
+
+.wedddiv>img {
+    width: 97%;
+    margin: 5px 5px 0 17px;
+}
+
+.weddcatdiv {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.celebcatimg {
+    width: 48%;
+    margin: 5px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.celebcatimg>img {
+    width: 100%;
+}
+
+.celebbuttonsdiv {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+}
+
+.celebbuttonsdiv>button {
+    min-width: 120px;
+    background-color: #ffffff;
+}
+
+.celebbuttonsdiv>button>span {
+    font-size: 11px;
+    padding: 10px 24px;
+}
+
+/* Celebrations div end */
+
+
+
+
+
+
+/* product home second slider css start */
+
+.myscndSlidesproductcls {
+    display: none
+}
+
+
+/* The dots/bullets/indicators */
+.clsmovingprdtdot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.clsactivescndprdtdot,
+.clsmovingscndprdtdot:hover {
+    background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .clsprdtprevbtn,
+    .clsprdtnextbtn {
+        font-size: 11px
+    }
+}
+
+/* product home second slider css end */
+
+
+
+
+
+
+/* trend div start */
+
+.trndblckwdth {
+    width: 33%;
+}
+
+.trndblckwdth>img {
+    width: 100%;
+    box-shadow: -30px 30px #98563e;
+}
+
+.trndtxtdiv {
+    padding: 50px;
+    text-align: center;
+}
+
+.stayhedtxt {
+    font-size: 50px;
+    font-family: AireRomanStd;
+    color: #404040;
+}
+
+.trndtxts {
+    font-size: 18px;
+    font-family: Berkeley Oldstyle Std;
+    font-style: italic;
+    color: #404040;
+    line-height: 30px;
+    margin: 15px 0px;
+}
+
+.trndbtnwdth {
+    width: 250px;
+    background-color: #ffffff;
+}
+
+.trndbtnwdth span {
+    font-size: 14px;
+    padding: 13px 28px;
+}
+
+/* trend div end */
+
+
+
+/* Featured In div start  */
+
+.featimgblock {
+    width: calc(100% / 4);
+    padding: 10px;
+    text-align: center;
+}
+
+.featimgblock>img {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.featimgblock>p {
+    font-family: Berkeley Oldstyle Std;
+    color: #404040;
+}
+
+/* Featured In div end */
+
+
+
+
+/* about div start  */
+
+.aboutimg {
+    width: 100%;
+}
+
+.aboutimg>img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* about div end  */
+
+
+
+
+
+/* Journal div start  */
+
+
+.feturdetils {
+    width: 32%;
+}
+
+.feturdetils>img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.feturdtxts {
+    margin: 18px;
+}
+
+.feturdtxts>h2 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.feturdtxts>p {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Berkeley Oldstyle Std;
+    margin: 20px 0;
+}
+
+.feturdtxts>a {
+    color: #404040;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 3px;
+    position: relative;
+    transition: color .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.feturdtxts>a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+    background: currentColor;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+
+
+.feturdtxts>a:hover::before {
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+
+/* Journal div end */
+
+
+
+/* policy info div start */
+
+.privcydetblock {
+    width: 23%;
+}
+
+.privcyimgdiv {
+    margin-right: 10px;
+}
+
+.privcyimgdiv>img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.policytxt>h2 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.policytxt>p {
+    font-size: 13px;
+    font-family: Berkeley Oldstyle Std;
+    margin-top: 5px;
+}
+
+/* policy info div end */
+
+
+
+
+
+/* footer start */
+
+.footercls {
+    padding: 75px 0 42px;
+    background: #022e31;
+    color: #ffffff;
+}
+
+.footerpart {
+    width: 50%;
+}
+
+.ftrinfodiv {
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+
+.ftrinfodiv>h2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.ftrinfodiv>ul {
+    list-style-type: none;
+
+}
+
+.ftrinfodiv>ul>li {
+    margin-bottom: 11px;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    opacity: 0.93;
+}
+
+.ftrinfodiv>p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    opacity: 0.93;
+}
+
+.ftrinfodiv>p>a {
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+
+.ftrsvgcls {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    fill: currentColor;
+    cursor: pointer;
+}
+
+.copyrightcls {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* footer end */
+
+
+
+/* whatsapp chat start */
+
+.whatsmdiv {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    bottom: 60px;
+    right: 20px;
+}
+
+.wpscnddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 45, 48);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.043) 0px 2.1px 1.3px, rgba(0, 0, 0, 0.055) 0px 5.9px 4.2px, rgba(0, 0, 0, 0.063) 0px 12.6px 9.5px, rgba(0, 0, 0, 0.1) 0px 25px 20px !important;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+}
+
+.wpscnddiv svg {
+    display: block;
+    fill: white;
+    stroke: white;
+    width: 24px;
+    height: 24px;
+}
+
+
+/* whatsapp chat end */
+
+
+
+
+/* home page css end */
+
+
+
+
+
+
+
+
+
+
+/* listing css start */
+
+
+
+.listname {
+    font-size: 24px;
+    color: #333;
+    margin-right: 40px;
+    font-weight: 400;
+    font-family: Berkeley Oldstyle Std;
+}
+
+.listsrtfiltr {
+    width: 108px;
+    height: 35px;
+    background-color: #1f3b3e;
+    font-size: 13px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.listsrtfiltr>svg {
+    height: 6px;
+    margin-left: 5px;
+}
+
+.itemcount>p {
+    font-family: Berkeley Oldstyle Std;
+    color: #404040;
+}
+
+.sortlistopen {
+    position: relative;
+}
+
+.sortdiv {
+    position: absolute;
+    width: 185px;
+    top: 50px;
+    right: 0;
+    display: none;
+}
+
+.sortcss {
+    background: white;
+    z-index: 1;
+    -webkit-box-shadow: 0 -2px 10px rgba(54, 54, 54, .2);
+    box-shadow: 0 -2px 10px #36363633;
+    list-style-type: none;
+    color: #939393;
+    position: relative;
+    padding: 2px 0;
+}
+
+.sortcss>li {
+    padding: 5px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: right;
+    text-transform: initial;
+    line-height: initial;
+}
+
+.sortcss>li:hover {
+    color: #000000;
+}
+
+.sortcss:before {
+    bottom: 100%;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent white transparent;
+    -webkit-filter: drop-shadow(0 -2px 2px rgba(54, 54, 54, .2));
+    filter: drop-shadow(0 -2px 2px rgba(54, 54, 54, .2));
+    content: "";
+    position: absolute;
+    right: 40px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+}
+
+.filterblock {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #36363680;
+    display: none;
+}
+
+.filterlistdiv {
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.fltrttlcls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+}
+
+.fltrttlcls>svg {
+    height: 17px;
+    margin-left: 5px;
+}
+
+
+.filterclosebtn {
+    position: fixed;
+    left: 345px;
+    top: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.filterclosebtn>svg {
+    width: 20px;
+    fill: #ffffff;
+}
+
+.lablfltrdiv {
+    padding: 0 30px;
+    border-bottom: 1px solid #e4c5b2;
+}
+
+.fitrhegtcls {
+    height: calc(100vh - 78px);
+    overflow: auto;
+}
+
+
+.lbllistdiv {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.lbllistdiv>svg {
+    width: 20px;
+}
+
+.fltrminusvg {
+    display: none;
+}
+
+.lsitshowdiv {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.listopenlbl {
+    list-style-type: none;
+    line-height: 20px;
+    font-size: 13px;
+    color: #b87333c2;
+    text-transform: capitalize;
+}
+
+.listopenlbl>li {
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.listopenlbl>li:hover {
+    color: #b87333;
+}
+
+.fltrappbtn {
+    position: fixed;
+    bottom: 0px;
+    width: 400px;
+    z-index: 1;
+}
+
+.fltrbtnspn {
+    font-size: 14px;
+    padding: 14px 24px;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.fltrbtnwdth {
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+
+.listitmblock {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listitemdiv {
+    width: 24%;
+    position: relative;
+    margin: 4px 5px;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.dubllistdiv {
+    width: 48.5%;
+}
+
+.listitemdiv>img {
+    width: 100%;
+    min-width: 250px;
+    min-height: 350px;
+    object-fit: cover;
+}
+
+
+.Recentlyblock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* listing css end */
+
+
+
+
+
+
+/* details page css start */
+
+
+/* breadcrumbs start */
+
+.detailsname {
+    font-size: 12px;
+    color: #282828;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.detailsname>span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* breadcrumbs end */
+
+
+
+/* details block start */
+
+.detailsblock {
+    width: 1350px;
+    padding: 15px;
+}
+
+.prdctsmlimg>img {
+    width: 110px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.prdctsmlimg>.active {
+    border: 1px solid #2b2b2b;
+}
+
+.deatbigimg>img {
+    width: 350px;
+    margin: 10px 0;
+}
+
+.deatilstext {
+    width: 400px;
+}
+
+.deatilstext>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.skunum {
+    font-size: 13px;
+    color: #adadad;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.prdcttprice {
+    font-size: 17px;
+    color: #404040;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.clsbtnfrm {
+    display: flex;
+}
+
+.value-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+.clsbtnfrm #decrease {
+    border-right: 0;
+}
+
+.clsbtnfrm #increase {
+    border-left: 0;
+}
+
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+input#number:focus-visible {
+    outline: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.stockcount {
+    margin-top: 8px;
+    font-style: italic;
+    font-family: Berkeley Oldstyle Std;
+    margin-bottom: 20px;
+}
+
+.detprdttxt {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.descritxt {
+    padding: 12px;
+    background-color: #f1f1f1;
+    border: 1px solid #dddddd;
+    color: #8d8d8d;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: Berkeley Oldstyle Std;
+}
+
+.detdesactive {
+    background-color: #ffffff;
+    border-bottom: 0;
+}
+
+.describorder {
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    margin-top: -2px;
+}
+
+.descridetail {
+    font-family: Berkeley Oldstyle Std;
+    font-size: 15px;
+    color: #333333;
+    margin: 15px 0;
+    line-height: 25px;
+}
+
+.descridetail>strong {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+
+.openshipdiv {
+    display: none;
+}
+
+/* details block end */
+
+
+
+/* review block start */
+
+.reviewul {
+    display: flex;
+    list-style-type: none;
+}
+
+.reviewul>li {
+    margin-right: 5px;
+}
+
+.reviewul>li>svg {
+    width: 30px;
+    cursor: pointer;
+}
+
+.wrtreview {
+    border-radius: 2px;
+    font-size: 16px;
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+    color: #000000;
+    padding: 7px 12px;
+}
+
+.reviewnote {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.reviewnote>a {
+    text-decoration: underline;
+}
+
+/* review block start */
+
+
+
+/* Shop by Category start */
+
+.catdetcls {
+    width: 12%;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.catdetcls>img {
+    width: 100%;
+}
+
+/* Shop by Category end */
+
+
+/* details page css end */
+
+
+
+
+
+/* wishlist pop up start */
+
+.wishlistshow {
+    display: none;
+}
+
+.wishpopback {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+    background-color: #36363680;
+}
+
+.wispopdia {
+    height: 90%;
+    width: 1100px;
+    background-color: #ffffff;
+}
+
+.shopprbg {
+    background: #434655;
+    padding: 8px 20px;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+}
+
+.guestshoptxt {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.guestshoptxt>svg {
+    height: 20px;
+    fill: #ffffff;
+    margin-right: 5px;
+}
+
+.shopprbg>svg {
+    height: 20px;
+    fill: #ffffff;
+    margin: 0 10px 0 15px;
+    cursor: pointer;
+}
+
+.wishitems {
+    padding: 30px 60px;
+    height: calc(100% - 36px);
+    overflow: auto;
+}
+
+.wishheaddiv {
+    color: #434655;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 20px;
+}
+
+.wishheaddiv>svg {
+    height: 25px;
+    fill: #434655;
+    cursor: pointer;
+}
+
+.wishlistmaincls {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.wishitemdiv {
+    background: #fff;
+    border: 1px solid #333;
+    width: 21%;
+    margin: 0 4% 4% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.wishitemdiv>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.wishitemdiv>p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4f4f4f;
+    margin: 7px 15px 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wishitemdiv>p:hover {
+    white-space: normal;
+    overflow: visible;
+}
+
+.addtocrt {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #4f4f4f;
+    color: #ffffff !important;
+    padding: 8px 0;
+    margin: 6px 0 0 !important;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    font-weight: 500 !important;
+}
+
+.addtocrt:hover {
+    opacity: 0.9;
+}
+
+.wishitemdiv>svg {
+    height: 30px;
+    fill: #c0c0c0;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* wishlist pop up end */
+
+
+
+
+
+/* cart pop up start */
+
+.cartshow {
+    display: none;
+}
+
+.cartpopblock {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+    background-color: #36363680;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartmaindiv {
+    width: 400px;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cartlblpadd {
+    padding: 30px;
+}
+
+.classcrtpdlft {
+    box-shadow: 0 -1px #e2e2e2 inset;
+    padding-bottom: 30px;
+}
+
+.cartlbl {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.cartclose {
+    height: 30px;
+    fill: #818181;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.listheight {
+    height: calc(100vh - 241px);
+    overflow: auto;
+}
+
+.cartinfotxt {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #1f3b3e;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+}
+
+.cartlistmrgn {
+    margin: 20px 0;
+}
+
+
+.cartimgdiv {
+    width: 120px;
+}
+
+.cartimgdiv>img {
+    width: 100%;
+}
+
+.crtpdlft {
+    padding-left: 15px;
+    width: 200px;
+}
+
+.cartitemname {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cartprice {
+    font-size: 13px;
+    line-height: 35px;
+    color: #979797;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+input#numbercrt {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+input#numbercrt:focus-visible {
+    outline: 0;
+}
+
+.removebtncrt {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.clsnotebox {
+    box-shadow: 0 -1px #e2e2e2;
+    padding-bottom: 15px;
+}
+
+.shipptaxtxt {
+    font-family: Berkeley Oldstyle Std;
+    color: #939393;
+    margin-bottom: 15px;
+}
+
+.checkoutcls {
+    font-size: 14px !important;
+    font-weight: 500;
+    padding: 13px 24px !important;
+}
+
+/* cart pop up end */
+
+
+
+/* account page start */
+
+.actcentrdiv {
+    filter: drop-shadow(0 0 5px rgba(51, 51, 51, .2));
+    background-color: #fff;
+    width: 792px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0;
+}
+
+.logindiv {
+    padding: 60px 40px;
+    width: 50%;
+}
+
+.logindiv>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.logindiv>p {
+    font-family: Berkeley Oldstyle Std;
+    margin: 10px 0 15px;
+}
+
+.loginput {
+    padding: 10px;
+    border: 1px solid #709392;
+    width: 100%;
+    font-family: Berkeley Oldstyle Std;
+    margin: 10px 0;
+}
+
+.loginput:focus-visible {
+    outline: 0;
+}
+
+.forgetpass {
+    font-family: Berkeley Oldstyle Std;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    cursor: pointer;
+    z-index: 1;
+    color: #939393;
+}
+
+.actcreat {
+    font-family: Berkeley Oldstyle Std;
+}
+
+.actcreat:hover {
+    color: #939393;
+}
+
+.bcktlogin {
+    font-family: Berkeley Oldstyle Std;
+}
+
+.bcktlogin:hover {
+    color: #939393;
+}
+
+
+.signwithfb {
+    border-color: #2d5073;
+    background-color: #3b5998;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.signwithfb:hover {
+    opacity: 0.9;
+}
+
+.signwithfb>svg {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    fill: #ffffff;
+    margin-right: 10px;
+    background-color: #ffffff1a;
+}
+
+
+
+.signwithgoogle {
+    border-color: #c23321;
+    background-color: #dd4b39;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.signwithgoogle:hover {
+    opacity: 0.9;
+}
+
+.signwithgoogle>svg {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    fill: #ffffff;
+    margin-right: 10px;
+    background-color: #ffffff1a;
+}
+
+.loginad {
+    width: 50%;
+    background-image: url(../images/login.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.openregister,
+.openforgetpass {
+    display: none;
+}
+
+
+/* account page end */
+
+
+
+
+/* Contact Us page start */
+
+.contactus {
+    text-align: center;
+}
+
+.contactus>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactus>p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #404040;
+}
+
+.contactdiv {
+    border-radius: 3px;
+    filter: drop-shadow(0px 1px 7.5px rgba(0, 34, 10, 0.3));
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.contactdiv>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactdiv>p {
+    font-size: 13px;
+}
+
+.contactinfo {
+    display: flex;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+.contactdetails {
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.contactdetails>h2 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contactdetails>p {
+    font-family: Berkeley Oldstyle Std;
+    color: #404040;
+}
+
+/* Contact Us page end */
+
+
+
+.navigationsvg {
+    display: none;
+    height: 32px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.closemobcls {
+    display: none;
+}
+
+.searchmobdiv {
+    margin: 10px 5px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.mobilesearch {
+    height: 40px !important;
+    width: 100%;
+    background-color: #fafafa;
+    border-color: transparent;
+    border-bottom: none !important;
+    background-position-x: 15px !important;
+    padding-left: 40px !important;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: center;
+    background-image: url(../images/homepage/search.svg);
+    font-size: 16px !important;
+    margin: 0 auto;
+    color: #25282b;
+    line-height: normal;
+    padding: 8px 30px 8px 14px;
+}
+
+.mobilesearch:focus-visible {
+    outline: 0;
+}
+
+.mobaccount {
+    display: none;
+}
+
+.pcbnr {
+    display: block;
+}
+
+.mobbnr {
+    display: none;
+}
+
+.avoutmobbnr {
+    display: none;
+}
+
+.policymobcss {
+    background-color: #f1ebdf;
+    margin-top: 30px;
+}
+
+.closesortcss {
+    display: none;
+}
+
+
+
+@media (max-width: 1300px) {
+    .celbparadiv {
+        width: 100%;
+    }
+
+    .wedddiv>img {
+        width: 94%;
+    }
+
+    .weddcatdiv {
+        width: 48%;
+    }
+
+    .stayhedtxt {
+        font-size: 40px;
+    }
+
+    .trndtxts {
+        font-size: 16px;
+        margin: 5px 0px;
+    }
+
+    .trndbtnwdth {
+        width: 190px;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .container {
+        padding: 8px 50px;
+    }
+
+    .currncysel {
+        display: none;
+    }
+
+    .hdricondiv {
+        padding-left: 0px;
+    }
+
+    .navigationsvg {
+        display: block;
+    }
+
+    .hdrlistbrdr {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        background: #00000070;
+        z-index: 2;
+        padding: 0 !important;
+        border: 0px;
+    }
+
+    .openmoblist {
+        display: none;
+    }
+
+    .hdrcatlist {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 400px;
+        background: #ffffff;
+        height: 100%;
+        justify-content: flex-start;
+        padding: 20px 30px;
+    }
+
+    .hdrcatlist>li {
+        width: 100%;
+        border-bottom: 1px solid #c5c5c5;
+        padding: 12px 0;
+    }
+
+    .closemobcls {
+        display: block;
+    }
+
+    .hdrcatlist>li>svg {
+        height: 25px;
+        padding: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .mobaccount {
+        color: #505050 !important;
+        border: 0px !important;
+        margin-top: 30px;
+        font-size: 16px !important;
+        font-weight: 500;
+        display: block;
+    }
+
+    .bannerdtsdiv {
+        right: 47%;
+    }
+
+    .homeprdtdiv {
+        display: flex;
+        overflow: auto;
+    }
+
+    .homeprdtdiv::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mySlidesproductcls {
+        display: block !important;
+    }
+
+    .mySlidesproductcls>div {
+        width: fit-content;
+    }
+
+    .myscndSlidesproductcls {
+        display: block !important;
+    }
+
+    .myscndSlidesproductcls>div {
+        width: fit-content;
+    }
+
+    .homeprdetitemdiv {
+        width: auto;
+    }
+
+    .homeprdtdiv {
+        padding: 8px 7px;
+    }
+
+    .clsprdtprevbtn,
+    .clsprdtnextbtn {
+        display: none;
+    }
+
+    .trndblckwdth {
+        width: 30%;
+    }
+
+    .celbparadiv {
+        justify-content: space-between;
+    }
+
+    .trndtxtdiv {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width: 1170px) {
+
+    .listitemdiv {
+        width: 32%;
+    }
+
+    .dubllistdiv {
+        width: 65%;
+    }
+
+}
+
+@media (max-width: 1160px) {
+
+    .celbparadiv {
+        flex-direction: column;
+    }
+
+    .celbtxtdiv {
+        width: 65%;
+    }
+
+    .wedddiv {
+        width: 95%;
+        text-align: center;
+    }
+
+    .wedddiv>img {
+        margin: 0;
+    }
+
+    .weddcatdiv {
+        width: 92%;
+    }
+
+    .celebparalabal {
+        font-size: 40px;
+    }
+
+    .celeparatxt {
+        font-size: 16px;
+    }
+
+    .allbuttons {
+        min-width: 130px;
+    }
+
+    .trndblckwdth {
+        width: 100%;
+    }
+
+    .trndtxtdiv {
+        margin: 30px 0;
+    }
+
+    .celebmobdiv {
+        flex-direction: row;
+    }
+
+    .policymobcss {
+        flex-wrap: wrap;
+    }
+
+    .privcydetblock {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .ftrwrap {
+        flex-wrap: wrap;
+    }
+
+    .footerpart {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .wispopdia {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .detailsblock {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .prdctsmlimg {
+        display: none;
+    }
+
+    .catdivrespons {
+        flex-wrap: wrap;
+    }
+
+    .catdetcls {
+        width: 17%;
+    }
+}
+
+@media (max-width: 910px) {
+
+    .listitemdiv {
+        width: 48%;
+    }
+
+    .dubllistdiv {
+        width: 97.2%;
+    }
+
+    .listitemdiv>img {
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .wishitemdiv {
+        width: 46%;
+    }
+
+    .deatbigimg {
+        width: 100%;
+    }
+
+    .deatbigimg>img {
+        width: 100%;
+    }
+
+    .detailsblock {
+        flex-wrap: wrap;
+    }
+
+    .deatilstext {
+        width: 100%;
+    }
+}
+
+@media (max-width: 830px) {
+
+    .container {
+        padding: 8px 30px;
+    }
+
+    .searchmobdiv {
+        display: block;
+    }
+
+    .hdrsearch {
+        display: none;
+    }
+
+    .hdrcmnylogo>img {
+        margin-left: 35px;
+    }
+
+    .hdrsvgicon>svg {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin: 0 3px;
+    }
+
+    .celebmobdiv {
+        display: block;
+    }
+
+    .feturdetils {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .latestimgcls {
+        flex-direction: column;
+    }
+
+    .latestimgcls>img {
+        width: 95%;
+    }
+
+    .celbtxtdiv {
+        width: 100%;
+    }
+
+    .celeparatxt {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .mobwrapfeat {
+        flex-wrap: wrap;
+    }
+
+    .featimgblock {
+        width: calc(100% / 2);
+    }
+
+    .featimgblock>img {
+        margin-bottom: 0;
+    }
+
+    .latestlbldiv {
+        margin: 25px 0;
+    }
+
+    .catdetcls {
+        width: 21%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .actcentrdiv {
+        width: 100%;
+    }
+
+    .actcentrdiv {
+        flex-direction: column;
+    }
+
+    .logindiv {
+        width: 100%;
+    }
+
+    .loginad {
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .container {
+        padding: 8px 10px;
+    }
+
+    .hdrcmnylogo {
+        width: 150px;
+    }
+
+    .hdrcmnylogo>img {
+        margin-left: 17px;
+    }
+
+    .accountsvg {
+        display: none;
+    }
+
+    .pcbnr {
+        display: none;
+    }
+
+    .mobbnr {
+        display: block;
+    }
+
+    .celebparalabal {
+        font-size: 30px;
+    }
+
+    .wedddiv>img {
+        width: 89%;
+    }
+
+    .celebcatimg {
+        width: 45%;
+    }
+
+    .celebbuttonsdiv>button {
+        min-width: 100px;
+    }
+
+    .celebbuttonsdiv>button>span {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .allbuttons {
+        margin: 5px;
+    }
+
+    .latestlbl~p {
+        text-align: center;
+    }
+
+    .aboutpcbnr {
+        display: none;
+    }
+
+    .avoutmobbnr {
+        display: block;
+    }
+
+    .privcydetblock {
+        width: 100%;
+    }
+
+    .copyrightcls {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .ftrsvgmob {
+        text-align: center;
+        border-top: 1px solid #658d8f;
+        border-bottom: 1px solid #658d8f;
+        padding: 10px 0;
+    }
+
+    .bannerdtsdiv {
+        right: 46%;
+        bottom: 5px;
+    }
+
+    .hdrcatlist {
+        width: 100%;
+    }
+
+    .fltrbtnwdth {
+        margin: 0;
+    }
+
+    .mobfilcls {
+        position: fixed;
+        bottom: 20px;
+        z-index: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .listsrtfiltr {
+        margin-left: 0;
+    }
+
+    .sortlistopen {
+        border-radius: 25px 0 0 25px;
+        border-right: 1px solid #658D8F;
+    }
+
+    .filterlistopen {
+        border-radius: 0 25px 25px 0;
+    }
+
+    .listsrtfiltr {
+        width: 115px;
+        height: 45px;
+    }
+
+    .sortdiv {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+        top: unset;
+    }
+
+    .sortcss:before {
+        display: none;
+    }
+
+    .sortcss>li {
+        text-align: center;
+    }
+
+    .closesortcss {
+        display: block;
+        text-align: left !important;
+    }
+
+    .sortcss>li>svg {
+        height: 25px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .filterlistdiv {
+        width: 100%;
+    }
+
+    .filterclosebtn {
+        right: 8px;
+        left: unset;
+    }
+
+    .fltrappbtn {
+        width: 100%;
+    }
+
+    .cartmaindiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .listitemdiv {
+        width: 47%;
+    }
+
+    .dubllistdiv {
+        width: 96.2%;
+    }
+
+    .wishitems {
+        padding: 15px 30px;
+    }
+
+    .wishitemdiv {
+        width: 100%;
+    }
+
+    .wishitemdiv {
+        margin: 5px;
+        width: 45%;
+    }
+
+    .wishitemdiv>p {
+        font-size: 10px;
+        margin: 3px 7px;
+    }
+
+    .addtocrt {
+        padding: 6px 0;
+        font-size: 10px !important;
+    }
+
+    .catdetcls {
+        width: 28%;
+        margin: 5px;
+    }
+
+    .contactus>img {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .hdrcmnylogo>img {
+        margin-left: 10px;
+    }
+
+    .bannerdtsdiv {
+        right: 44%;
+    }
+
+    .listitemdiv {
+        width: 46%;
+    }
+
+    .dubllistdiv {
+        width: 95.2%;
+    }
+
+    .reviewul>li>svg {
+        width: 20px;
+    }
+
+    .catdetcls {
+        width: 45%;
+    }
+
+    .detailsname {
+        letter-spacing: 0px;
+    }
+
+    .logindiv {
+        padding: 30px 25px;
+    }
+}

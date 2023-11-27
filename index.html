@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LASHKARI'S CREATION</title>
-    
+
     <meta name="description" content="welcome to the lashakri's creation!!!">
-    <meta name="keywords" content="lashkari creation, lashkari's creation, lashkari freelancing, l creation, lashkari parth, parth lashkari">
+    <meta name="keywords"
+        content="lashkari creation, lashkari's creation, lashkari freelancing, l creation, lashkari parth, parth lashkari">
     <meta name="author" content="John Doe">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -29,14 +30,41 @@
                     </p>
 
                     <div>
-                        <ul class="hedrlist">
-                            <li>home</li>
-                            <li>about</li>
-                            <li>resume</li>
-                            <li>services</li>
-                            <li>projects</li>
-                            <li>contact us</li>
-                        </ul>
+
+                        <svg class="clsmobmenu showmenu" viewBox="0 0 24 24">
+                            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                        </svg>
+
+                        <svg class="clsmobmenu closemenu" viewBox="0 0 24 24">
+                            <path
+                                d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                            </path>
+                        </svg>
+
+                        <div class="hidemenu">
+                            <ul class="hedrlist">
+                                <li>
+                                    <a href="#home">home</a>
+                                </li>
+
+                                <li>
+                                    <a href="#about">about</a>
+                                </li>
+
+                                <li>
+                                    <a href="#resume">resume</a>
+                                </li>
+
+                                <li>
+                                    <a href="#projects">projects</a>
+                                </li>
+
+                                <li>
+                                    <a href="#contact">contact me</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
@@ -45,7 +73,7 @@
         </header>
 
 
-        <div class="mynamecss">
+        <div class="mynamecss" id="home">
             <div class="fullnamecls">
                 <h3>hey! i am </h3>
 
@@ -71,7 +99,7 @@
     </section>
 
 
-    <section class="container" style="padding-top: 0;">
+    <section class="container" style="padding-top: 0;" id="about">
 
         <div class="profileinfo">
 
@@ -146,13 +174,33 @@
 
         <div class="workedcmny">
             <a href="https://www.optigoapps.com/" target="_blank">
-                <img src="./images/logo.png" alt="">
+                <img class="mobwidth" src="./images/logo.png" alt="">
+            </a>
+
+            <a href="https://www.upwork.com/freelancers/~01b6d31a90650b5094" target="_blank">
+                <svg style="width: 120px;" viewBox="0 0 102 28" role="img" aria-hidden="true">
+                    <path fill="#14a800"
+                        d="M28.18,19.06A6.54,6.54,0,0,1,23,16c.67-5.34,2.62-7,5.2-7s4.54,2,4.54,5-2,5-4.54,5m0-13.34a7.77,7.77,0,0,0-7.9,6.08,26,26,0,0,1-1.93-5.62H12v7.9c0,2.87-1.3,5-3.85,5s-4-2.12-4-5l0-7.9H.49v7.9A8.61,8.61,0,0,0,2.6,20a7.27,7.27,0,0,0,5.54,2.35c4.41,0,7.5-3.39,7.5-8.24V8.77a25.87,25.87,0,0,0,3.66,8.05L17.34,28h3.72l1.29-7.92a11,11,0,0,0,1.36,1,8.32,8.32,0,0,0,4.14,1.28h.34A8.1,8.1,0,0,0,36.37,14a8.12,8.12,0,0,0-8.19-8.31">
+                    </path>
+                    <path fill="#14a800"
+                        d="M80.8,7.86V6.18H77.2V21.81h3.65V15.69c0-3.77.34-6.48,5.4-6.13V6c-2.36-.18-4.2.31-5.45,1.87">
+                    </path>
+                    <polygon fill="#14a800"
+                        points="55.51 6.17 52.87 17.11 50.05 6.17 45.41 6.17 42.59 17.11 39.95 6.17 36.26 6.17 40.31 21.82 44.69 21.82 47.73 10.71 50.74 21.82 55.12 21.82 59.4 6.17 55.51 6.17">
+                    </polygon>
+                    <path fill="#14a800"
+                        d="M67.42,19.07c-2.59,0-4.53-2.05-4.53-5s2-5,4.53-5S72,11,72,14s-2,5-4.54,5m0-13.35A8.1,8.1,0,0,0,59.25,14,8.18,8.18,0,1,0,75.6,14a8.11,8.11,0,0,0-8.18-8.31">
+                    </path>
+                    <path fill="#14a800"
+                        d="M91.47,14.13h.84l5.09,7.69h4.11l-5.85-8.53a7.66,7.66,0,0,0,4.74-7.11H96.77c0,3.37-2.66,4.65-5.3,4.65V0H87.82V21.82h3.64Z">
+                    </path>
+                </svg>
             </a>
         </div>
     </section>
 
 
-    <section class="container">
+    <section class="container" id="resume">
         <div class="detailinfo">
             <!-- <div class="infolabel">
                 <ul>
@@ -167,84 +215,93 @@
                 <div class="partofinfo">
                     <h2 class="clsinfodeetlbl">education</h2>
 
-                    <div class="infodescription">
+                    <div style="display: flex;flex-wrap: wrap;">
 
-                        <div class="infosvgdiv">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
-                            </svg>
+                        <div class="infodescription">
+
+                            <div class="infosvgdiv">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3 class="yearofedu">january to march , 2022</h3>
+                                <h2 class="eduname">certified cource of web designer</h2>
+                                <h3 class="eduinsi">SRK institute of skills</h3>
+                                <!-- <ul class="eduquote">
+                                        <li>"Web designers craft digital experiences that captivate, inspire, and connect."
+                                        </li>
+                                        <li>"Web designers turn pixels into purpose, one click at a time."</li>
+                                        <li>"Web designers are the architects of the digital world, shaping online
+                                            experiences."
+                                        </li>
+                                        <li>"Web designers weave creativity and code into captivating online landscapes."
+                                        </li>
+                                    </ul> -->
+                            </div>
                         </div>
 
-                        <div>
-                            <h3 class="yearofedu">january to march , 2022</h3>
-                            <h2 class="eduname">certified cource of web designer</h2>
-                            <h3 class="eduinsi">SRK institute of skills</h3>
-                            <ul class="eduquote">
-                                <li>"Web designers craft digital experiences that captivate, inspire, and connect."</li>
-                                <li>"Web designers turn pixels into purpose, one click at a time."</li>
-                                <li>"Web designers are the architects of the digital world, shaping online experiences."
-                                </li>
-                                <li>"Web designers weave creativity and code into captivating online landscapes."</li>
-                            </ul>
+                        <div class="infodescription">
+
+                            <div class="infosvgdiv">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3 class="yearofedu">2014-2018</h3>
+                                <h2 class="eduname">Bachelor of Technology in automobile engineering</h2>
+                                <h3 class="eduinsi">Uka Tarsadiya University</h3>
+                                <!-- <ul class="eduquote">
+                                        <li>"Automobile engineering : drives innovation on wheels, shaping the future of
+                                            mobility."</li>
+                                        <li>"Automobile engineering : where science meets the open road."</li>
+                                        <li>"Automobile engineering : Igniting the passion for innovation in motion."</li>
+                                    </ul> -->
+                            </div>
                         </div>
+
+                        <div class="infodescription">
+
+                            <div class="infosvgdiv">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3 class="yearofedu">2013-2014</h3>
+                                <h2 class="eduname">HSC</h2>
+                                <h3 class="eduinsi">gurukul vidhyapith n. v. dhamanvala</h3>
+
+                            </div>
+                        </div>
+
+                        <div class="infodescription">
+
+                            <div class="infosvgdiv">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3 class="yearofedu">2011-2012</h3>
+                                <h2 class="eduname">SSC</h2>
+                                <h3 class="eduinsi">Shree sadguru vidhyalaya</h3>
+
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="infodescription">
 
-                        <div class="infosvgdiv">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="yearofedu">2014-2018</h3>
-                            <h2 class="eduname">Bachelor of Technology in automobile engineering</h2>
-                            <h3 class="eduinsi">Uka Tarsadiya University</h3>
-                            <ul class="eduquote">
-                                <li>"Automobile engineering : drives innovation on wheels, shaping the future of
-                                    mobility."</li>
-                                <li>"Automobile engineering : where science meets the open road."</li>
-                                <li>"Automobile engineering : Igniting the passion for innovation in motion."</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="infodescription">
-
-                        <div class="infosvgdiv">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="yearofedu">2013-2014</h3>
-                            <h2 class="eduname">HSC</h2>
-                            <h3 class="eduinsi">gurukul vidhyapith n. v. dhamanvala</h3>
-
-                        </div>
-                    </div>
-
-                    <div class="infodescription">
-
-                        <div class="infosvgdiv">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M19 2L14 6.5V17.5L19 13V2M6.5 5C4.55 5 2.45 5.4 1 6.5V21.16C1 21.41 1.25 21.66 1.5 21.66C1.6 21.66 1.65 21.59 1.75 21.59C3.1 20.94 5.05 20.5 6.5 20.5C8.45 20.5 10.55 20.9 12 22C13.35 21.15 15.8 20.5 17.5 20.5C19.15 20.5 20.85 20.81 22.25 21.56C22.35 21.61 22.4 21.59 22.5 21.59C22.75 21.59 23 21.34 23 21.09V6.5C22.4 6.05 21.75 5.75 21 5.5V19C19.9 18.65 18.7 18.5 17.5 18.5C15.8 18.5 13.35 19.15 12 20V6.5C10.55 5.4 8.45 5 6.5 5Z" />
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="yearofedu">2011-2012</h3>
-                            <h2 class="eduname">SSC</h2>
-                            <h3 class="eduinsi">Shree sadguru vidhyalaya</h3>
-
-                        </div>
-                    </div>
 
                 </div>
 
@@ -278,27 +335,46 @@
                 <div class="partofinfo">
                     <h2 class="clsinfodeetlbl">Skills</h2>
 
-                    <div class="infodescription">
+                    <div class="infodescription infoflx">
 
                         <div class="skillshowdiv">
                             <h3>HTML</h3>
-
-                            <div></div>
-
                         </div>
 
                         <div class="skillshowdiv">
                             <h3>CSS</h3>
-
-                            <div></div>
-
                         </div>
 
                         <div class="skillshowdiv">
                             <h3>BOOTSTRAP</h3>
+                        </div>
 
-                            <div></div>
+                        <div class="skillshowdiv">
+                            <h3>JavaScript</h3>
+                        </div>
 
+                        <div class="skillshowdiv">
+                            <h3>jQuery</h3>
+                        </div>
+
+                        <div class="skillshowdiv">
+                            <h3>SASS</h3>
+                        </div>
+
+                        <div class="skillshowdiv">
+                            <h3>Figma to html</h3>
+                        </div>
+
+                        <div class="skillshowdiv">
+                            <h3>Canva to html</h3>
+                        </div>
+
+                        <div class="skillshowdiv">
+                            <h3>chatGPT</h3>
+                        </div>
+
+                        <div class="skillshowdiv">
+                            <h3>Responsive websites</h3>
                         </div>
 
                     </div>
@@ -309,7 +385,7 @@
     </section>
 
 
-    <section style="display: none;">
+    <section id="projects">
 
         <div class="projhead">
             <h2>My Projects</h2>
@@ -318,49 +394,59 @@
 
         <div class="proexpdiv">
 
-            <div class="projimgdiv" id="frstprj" style="height: 80vh;margin: 40px 30px 0;">
+            <div class="projimgdiv mobileprjct" id="frstprj">
                 <img src="./images/1 (1).png" alt="">
 
-                <div class="prolbldiv" id="frstdet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            jewellery ecommerce app
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/mob app/index.html" target="_blank">
+                    <div class="prolbldiv" id="frstdet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                jewellery ecommerce <br> mobile app
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
 
 
-            <div class="projimgdiv" id="eigtprj" style="height: 80vh;margin-right: 30px;">
+            <div class="projimgdiv mobileprjct" id="eigtprj">
                 <img src="./images/5 (1).png" alt="">
 
-                <div class="prolbldiv" id="eigtdet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            ongoing project <br> mobile admin app
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/admin app/index.html" target="_blank">
+                    <div class="prolbldiv" id="eigtdet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                ongoing project <br> mobile admin app
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
+        </div>
 
-
+        <div class="proexpdiv">
 
             <div class="projimgdiv" id="scndprj">
                 <img src="./images/2 (1).png" alt="">
 
-                <div class="prolbldiv" id="scnddet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            ongoing project <br> clone of shopify pipeline theme
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/shopify pipeline theme/index.html" target="_blank">
+                    <div class="prolbldiv" id="scnddet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                ongoing project <br> clone of shopify pipeline theme
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
@@ -368,14 +454,17 @@
             <div class="projimgdiv" id="thrdprj">
                 <img src="./images/3 (1).png" alt="">
 
-                <div class="prolbldiv" id="thrddet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            clone of smiling rocks <br> jewellery ecommerce website
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/smiling rocks/index.html" target="_blank">
+                    <div class="prolbldiv" id="thrddet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                clone of smiling rocks <br> jewellery ecommerce website
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
@@ -383,14 +472,17 @@
             <div class="projimgdiv" id="frthprj">
                 <img src="./images/4 (1).png" alt="">
 
-                <div class="prolbldiv" id="frthdet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            dashboard
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/dashboard/index.html" target="_blank">
+                    <div class="prolbldiv" id="frthdet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                dashboard
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
@@ -398,14 +490,17 @@
             <div class="projimgdiv" id="fiftprj">
                 <img src="./images/6 (1).png" alt="">
 
-                <div class="prolbldiv" id="fiftdet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            clone of divas mantra <br> jewellery ecommerce website
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/divas mantra/index.html" target="_blank">
+                    <div class="prolbldiv" id="fiftdet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                clone of divas mantra <br> jewellery ecommerce website
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
@@ -428,14 +523,17 @@
             <div class="projimgdiv" id="sevnprj">
                 <img src="./images/8 (1).png" alt="">
 
-                <div class="prolbldiv" id="sevndet">
-                    <div class="imghoverdiv">
-                        <h3>
-                            clone of suhani pittie <br> jewellery ecommerce website
-                        </h3>
-                        <span>Web Design</span>
+                <a href="./websites/suhanipittie/index.html" target="_blank">
+                    <div class="prolbldiv" id="sevndet">
+                        <div class="imghoverdiv">
+                            <h3>
+                                clone of suhani pittie <br> jewellery ecommerce website
+                            </h3>
+                            <span>Web Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
 
             </div>
 
@@ -445,7 +543,7 @@
 
 
 
-    <section>
+    <section id="contact">
         <div class="freecontdiv">
             <h2>I'm <span style="color: #a0f669;">Available</span> for freelancing</h2>
 
@@ -468,9 +566,9 @@
         <div class="contactblock">
             <h2 class="mb-4">Contact Me</h2>
 
-            <div class="infodescription">
+            <div class="infocontdes">
 
-                <div class="skillshowdiv">
+                <div class="contactshowdiv">
 
                     <svg class="contsvgcls" viewBox="0 0 24 24">
                         <path
@@ -482,13 +580,13 @@
 
                     <p class="contadivcls">
                         <a aria-label="Chat on WhatsApp" href="https://wa.me/919737140956">
-                            <img style="width: 100%;" alt="Chat on WhatsApp" src="./images/wp.png" />
+                            <img style="width: 100%; max-width: 200px;" alt="Chat on WhatsApp" src="./images/wp.png" />
                         </a>
                     </p>
 
                 </div>
 
-                <div class="skillshowdiv">
+                <div class="contactshowdiv">
 
                     <svg class="contsvgcls" viewBox="0 0 24 24">
                         <path
@@ -504,7 +602,7 @@
 
                 </div>
 
-                <div class="skillshowdiv">
+                <div class="contactshowdiv">
 
                     <svg class="contsvgcls" viewBox="0 0 24 24">
                         <path
@@ -519,7 +617,7 @@
 
                 </div>
 
-                <div class="skillshowdiv">
+                <div class="contactshowdiv">
 
                     <svg class="contsvgcls" viewBox="0 0 24 24">
                         <path
@@ -539,36 +637,121 @@
             </div>
 
 
-            <div style="width: 50%;">
-                <img style="width: 100%;" src="./images/img1.jpg" alt="img">
-            </div>
-
         </div>
     </section>
 
 
 
-    <footer>
-        <div class="container clsftrflx">
-            <div class="clsftrinfodiv">
+    <footer class="clsfooter">
+        <div class="clsftrflx">
+            <div class="clsftrinfodiv" style="padding-right: 25px;">
                 <h2>About</h2>
 
                 <p class="aboutpara">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi voluptate voluptas distinctio
-                    excepturi recusandae deserunt laborum, expedita fuga corrupti, repellendus, officiis error? Dolorem
-                    mollitia.
+                    To work in reputed organization with
+                    dedication so as to gain knowledge and
+                    enhance my skill. With continuous value
+                    addition to the organization. <br>
+                    Also I’m a quick learner, I can easily learn new
+                    things.
+
                 </p>
+
+                <div class="socialicon">
+
+                    <a href="https://instagram.com/_.lashkari._?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/parth-lashkari-7a0b03236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                        </svg>
+                    </a>
+
+                    <a href="mailto:parthlashkari99@gmail.com" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M20,18H18V9.25L12,13L6,9.25V18H4V6H5.2L12,10.25L18.8,6H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.snapchat.com/add/mr.lashkari?share_id=6ZL181mnL-s&locale=en-US" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M21.93 16.56C21.79 16.18 21.5 16 21.22 15.81C21.17 15.78 21.11 15.75 21.07 15.73C21 15.68 20.89 15.64 20.8 15.59C19.86 15.09 19.12 14.46 18.61 13.72C18.47 13.5 18.35 13.29 18.24 13.06C18.2 12.93 18.2 12.86 18.23 12.8C18.26 12.75 18.3 12.7 18.35 12.67C18.5 12.56 18.68 12.46 18.79 12.38C19 12.25 19.15 12.15 19.25 12.08C19.64 11.81 19.91 11.5 20.08 11.2C20.32 10.75 20.35 10.22 20.16 9.75C19.91 9.08 19.27 8.66 18.5 8.66C18.34 8.66 18.18 8.68 18 8.71C18 8.72 17.94 8.73 17.9 8.74C17.9 8.28 17.89 7.8 17.85 7.32C17.71 5.64 17.12 4.76 16.5 4.06C16.11 3.62 15.65 3.24 15.14 2.95C14.21 2.42 13.15 2.15 12 2.15S9.8 2.42 8.87 2.95C8.35 3.24 7.89 3.62 7.5 4.06C6.88 4.76 6.3 5.64 6.15 7.32C6.11 7.8 6.1 8.28 6.11 8.74C6.06 8.73 6 8.72 6 8.71C5.82 8.68 5.66 8.66 5.5 8.66C4.73 8.66 4.09 9.08 3.84 9.75C3.65 10.22 3.68 10.75 3.92 11.2C4.09 11.5 4.36 11.81 4.75 12.08C4.85 12.15 5 12.25 5.21 12.39L5.63 12.66C5.69 12.7 5.73 12.75 5.77 12.8C5.8 12.87 5.8 12.94 5.75 13.07C5.65 13.3 5.53 13.5 5.39 13.72C4.89 14.45 4.18 15.07 3.27 15.56C2.78 15.82 2.28 16 2.07 16.56C1.91 17 2 17.5 2.42 17.91C2.57 18.06 2.74 18.19 2.93 18.29C3.33 18.5 3.75 18.68 4.18 18.79C4.27 18.82 4.36 18.85 4.43 18.91C4.58 19.03 4.56 19.23 4.76 19.5C4.86 19.66 5 19.79 5.13 19.89C5.54 20.18 6 20.19 6.5 20.21C6.94 20.23 7.44 20.25 8 20.44C8.26 20.5 8.5 20.67 8.79 20.85C9.5 21.27 10.42 21.85 12 21.85C13.57 21.85 14.5 21.27 15.22 20.84C15.5 20.67 15.75 20.5 16 20.44C16.55 20.25 17.06 20.23 17.5 20.21C18 20.2 18.46 20.18 18.87 19.89C19.04 19.77 19.18 19.61 19.29 19.43C19.43 19.19 19.43 19 19.56 18.91C19.63 18.86 19.71 18.82 19.8 18.8C20.24 18.68 20.66 18.5 21.06 18.29C21.27 18.18 21.45 18.04 21.6 17.87L21.61 17.87C22 17.46 22.08 17 21.93 16.56M20.53 17.31C19.67 17.78 19.1 17.73 18.66 18C18.5 18.12 18.45 18.28 18.42 18.44C18.41 18.5 18.4 18.58 18.39 18.64C18.37 18.78 18.34 18.9 18.24 18.97C17.9 19.2 16.91 18.95 15.63 19.37C14.57 19.72 13.9 20.73 12 20.73C10.1 20.73 9.45 19.73 8.37 19.37C7.1 18.95 6.1 19.2 5.77 18.97C5.5 18.78 5.72 18.26 5.34 18C4.9 17.73 4.33 17.78 3.5 17.31C3.19 17.15 3.14 17 3.18 16.93C3.22 16.84 3.34 16.77 3.42 16.73C5.07 15.94 6 14.91 6.47 14.1C6.91 13.38 7 12.83 7.03 12.75C7.06 12.54 7.09 12.38 6.86 12.17C6.64 11.96 5.66 11.36 5.39 11.17C4.93 10.85 4.74 10.54 4.88 10.15L4.88 10.15V10.15C5 9.88 5.23 9.78 5.5 9.78C5.58 9.78 5.66 9.79 5.74 9.81C6.24 9.91 6.72 10.16 7 10.23C7.03 10.24 7.06 10.24 7.1 10.24C7.19 10.24 7.24 10.21 7.27 10.15C7.28 10.11 7.29 10.06 7.29 10C7.25 9.46 7.18 8.41 7.26 7.42C7.3 7 7.37 6.64 7.46 6.33C7.66 5.65 8 5.2 8.34 4.79C8.59 4.5 9.75 3.27 12 3.27C13.85 3.27 14.96 4.11 15.44 4.56C15.54 4.66 15.62 4.74 15.66 4.79C16.04 5.23 16.38 5.71 16.58 6.47C16.65 6.74 16.71 7.06 16.74 7.42C16.82 8.4 16.75 9.46 16.71 10C16.71 10.04 16.71 10.08 16.72 10.11C16.73 10.2 16.79 10.24 16.9 10.24C16.94 10.24 16.97 10.24 17 10.23C17.28 10.16 17.76 9.91 18.26 9.8C18.34 9.79 18.42 9.78 18.5 9.78C18.75 9.78 19 9.87 19.1 10.1L19.11 10.14L19.12 10.14L19.12 10.15C19.27 10.53 19.07 10.85 18.62 11.16C18.35 11.35 17.36 11.96 17.14 12.16C16.91 12.38 16.94 12.54 16.97 12.75C17 12.85 17.18 13.8 18.08 14.86C18.63 15.5 19.42 16.17 20.58 16.73C20.65 16.76 20.74 16.81 20.79 16.87C20.82 16.92 20.84 16.96 20.83 17C20.82 17.1 20.73 17.2 20.53 17.31Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://wa.me/919737140956" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/parth.lashkari.52/" target="_blank">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                        </svg>
+                    </a>
+
+                </div>
             </div>
 
             <div class="clsftrinfodiv">
                 <h2>links</h2>
 
                 <ul class="ftrlistcls">
-                    <li>home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>projects</li>
-                    <li>contact</li>
+                    <li>
+                        <a href="#home">
+                            <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                                <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                            </svg>
+                            home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                                <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                            </svg>
+                            about
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#resume">
+                            <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                                <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                            </svg>
+                            resume
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
+                            <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                                <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                            </svg>
+                            projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                                <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                            </svg>
+                            contact me
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -576,10 +759,54 @@
                 <h2>services</h2>
 
                 <ul class="ftrlistcls">
-                    <li>web design</li>
-                    <li>App design</li>
-                    <li>figma to html</li>
-                    <li>psd to html</li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        web design
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        App design
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        Responsive websites
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        invoice design
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        jewellery tagprint design
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        jewellery bagprint design
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        figma to html
+                    </li>
+                    <li>
+                        <svg class="ftrarrowcls" viewBox="0 0 24 24">
+                            <path d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z" />
+                        </svg>
+                        psd to html
+                    </li>
                 </ul>
             </div>
 
@@ -587,6 +814,28 @@
                 <h2>
                     have a Questions?
                 </h2>
+
+                <div class="ftrqueflx">
+                    <svg class="contftrsvgcls" viewBox="0 0 24 24">
+                        <path
+                            d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                    </svg>
+
+                    <p class="contaftrdivcls">
+                        <a href="tel:+919737140956">+919737140956</a>
+                    </p>
+                </div>
+
+                <div class="ftrqueflx">
+                    <svg class="contftrsvgcls" viewBox="0 0 24 24">
+                        <path
+                            d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
+                    </svg>
+
+                    <p class="contaftrdivcls">
+                        <a href="mailto:parthlashkari99@gmail.com">parthlashkari99@gmail.com</a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>

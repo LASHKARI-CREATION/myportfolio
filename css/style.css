@@ -5,6 +5,10 @@
     font-family: "Poppins", Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -12,7 +16,7 @@ a {
 
 .headingsec {
     height: 100vh;
-    background: linear-gradient(to right, #3d64ff1a 0%, #3d64ff1a 50%, #ffffff 50%, #ffffff 100%);
+    background: linear-gradient(to right, #ff3d3d1a 0%, #ff3d3d1a 50%, #ffffff 50%, #ffffff 100%);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -46,7 +50,7 @@ a {
 
 .namecls>span {
     border-radius: 50%;
-    background-color: #3e64ff;
+    background-color: #ff3d3d;
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -92,7 +96,7 @@ a {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
-    color: #3e64ff;
+    color: #ff3d3d;
     letter-spacing: 4px;
 }
 
@@ -113,14 +117,14 @@ a {
 }
 
 .fullnamecls>h2>span {
-    color: #3e64ff;
+    color: #ff3d3d;
     text-decoration: underline;
 }
 
 .arrowdiv {
     height: 70px;
     width: 70px;
-    background: #ebefff;
+    background: #ffc2c2;
     transform: rotate(45deg);
 }
 
@@ -133,7 +137,7 @@ a {
 
 .arrowcls>svg {
     height: 30px;
-    fill: #3e64ff;
+    fill: #ff3d3d;
 }
 
 /* Keyframes animation for moving the arrow down */
@@ -219,8 +223,8 @@ a {
 }
 
 .cvdownloadcls>a {
-    background: #3e64ff;
-    border: 1px solid #3e64ff;
+    background: #ff3d3d;
+    border: 1px solid #ff3d3d;
     color: #fff;
     cursor: pointer;
     border-radius: 40px;
@@ -236,7 +240,12 @@ a {
 .workedcmny {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 30px 0;
+}
+
+.workedcmny>a {
+    margin: 10px 20px;
 }
 
 .detailinfo {
@@ -260,14 +269,14 @@ a {
     font-weight: 800;
     font-size: 30px;
     margin-bottom: 30px;
-    color: #3e64ff;
+    color: #ff3d3d;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
 
 .infodescription {
     display: flex;
-    margin: 40px 0;
+    padding: 40px;
 }
 
 .infosvgdiv {
@@ -279,12 +288,12 @@ a {
     padding: 15px;
     fill: #ffffff;
     border-radius: 50%;
-    background: #3e64ff;
+    background: #ff3d3d;
 }
 
 .yearofedu {
     font-size: 16px;
-    color: #3e64ff;
+    color: #ff3d3d;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
@@ -328,20 +337,28 @@ a {
 
 .projhead>p {
     font-weight: 400;
+    padding: 0 10px;
     color: #999999;
 }
 
 .proexpdiv {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 30px;
 }
 
 .projimgdiv {
-    /* width: 33.33%; */
+    width: 45%;
     position: relative;
     display: flex;
-    margin-top: 40px;
+    margin: 30px 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.40);
+}
+
+.mobileprjct {
+    height: 80vh;
+    width: auto;
 }
 
 .projimgdiv>img {
@@ -353,7 +370,7 @@ a {
 }
 
 .imghoverdiv {
-    background: #3e64ffad;
+    background: #ff3d3dad;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -386,25 +403,29 @@ a {
     font-weight: 600;
 }
 
+.infoflx {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .skillshowdiv {
-    width: 25%;
+    width: 23%;
     margin: 10px;
-    padding: 10px;
+    padding: 25px 10px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .skillshowdiv>h3 {
     text-align: center;
-    text-transform: capitalize;
+    /* text-transform: uppercase; */
     font-size: 17px;
     letter-spacing: 1px;
-    margin-top: 20px;
 }
 
 .freecontdiv {
     text-align: center;
-    padding: 100px 0;
-    background: #3e65ffb3;
+    padding: 100px 10px;
+    background: #ff3d3db3;
 }
 
 .freecontdiv>h2 {
@@ -422,8 +443,8 @@ a {
 }
 
 .contactbtn {
-    background: #3e64ff;
-    border: 1px solid #3e64ff;
+    background: #ff3d3d;
+    border: 1px solid #ff3d3d;
     color: #fff;
     box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
     font-size: 12px;
@@ -441,17 +462,17 @@ a {
     color: #000000;
 }
 
-.contactblock{
+.contactblock {
     text-align: center;
     padding: 50px 0;
 }
 
-.contactblock>h2{
+.contactblock>h2 {
     font-size: 40px;
     font-weight: 700;
 }
 
-.contadivcls{
+.contadivcls {
     color: #999999;
     line-height: 1.5;
     text-transform: capitalize;
@@ -460,44 +481,478 @@ a {
     margin-top: 15px;
 }
 
-.contsvgcls{
+.contsvgcls {
     width: 90px;
     border-radius: 30%;
     fill: #ffffff;
-    background: #3e64ff;
+    background: #ff3d3d;
     padding: 25px;
 }
 
-.clsftrflx{
+.clsfooter {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 50px 20px;
     display: flex;
+    justify-content: center;
+}
+
+.clsftrflx {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.clsftrinfodiv{
+.clsftrinfodiv {
     width: 25%;
     padding: 10px;
 }
 
-.clsftrinfodiv>h2{
+.clsftrinfodiv>h2 {
     text-transform: capitalize;
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-size: 18px;
 }
 
-.ftrlistcls{
+.ftrlistcls {
     list-style-type: none;
     /* font-size: 18px; */
     letter-spacing: 1px;
     text-transform: capitalize;
 }
 
-.ftrlistcls>li{
+.ftrlistcls>li {
     margin-bottom: 8px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #999999;
 }
 
-.aboutpara{
+.ftrlistcls>li>a {
+    display: flex;
+    align-items: center;
+}
+
+.aboutpara {
+    text-align: justify;
     letter-spacing: 1px;
     line-height: 1.5;
+    color: #999999;
+}
+
+.socialicon{
+    margin-top: 15px;
+}
+
+.socialicon>a>svg{
+    fill: #ffffff99;
+    width: 35px;
+    padding-right: 5px;
+}
+
+.infocontdes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.contactshowdiv {
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.contactshowdiv>h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.ftrarrowcls {
+    width: 30px;
+    fill: #ffffff;
+}
+
+.ftrqueflx {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.contftrsvgcls {
+    width: 25px;
+    fill: #ffffff;
+    margin-right: 10px;
+}
+
+.contaftrdivcls {
+    color: #999999;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    /* font-size: 18px; */
+}
+
+
+
+
+.clsmobmenu {
+    width: 40px;
+    fill: #ff3d3d;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: 100%;
+        padding: 10px 25px;
+    }
+
+    .skillshowdiv {
+        width: 30%;
+    }
+
+    .contactshowdiv {
+        width: 44%;
+    }
+
+    .clsftrflx {
+        width: 100%;
+    }
+
+    .clsftrinfodiv {
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .profileinfo {
+        flex-wrap: wrap;
+    }
+
+    .proimg {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .prodet {
+        width: 100%;
+    }
+
+    #about {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        position: relative;
+    }
+
+    .hidemenu {
+        display: none;
+    }
+
+    .hedrlist {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100px;
+        z-index: 1;
+        align-items: flex-start;
+        background: #ffffff;
+        padding: 45px 20px;
+    }
+
+    .hedrlist>li {
+        margin: 10px 20px;
+    }
+
+    .clsmobmenu {
+        display: block;
+    }
+
+    .closemenu {
+        display: none;
+    }
+
+    .projimgdiv {
+        width: 100%;
+        margin: 20px 10px;
+    }
+
+    .mobileprjct {
+        height: auto;
+        width: 43%;
+    }
+
+    .imghoverdiv>h3 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .imghoverdiv>span {
+        font-size: 10px;
+    }
+
+    .freecontdiv>h2 {
+        font-size: 30px;
+    }
+
+    .freecontdiv>p {
+        margin: 8px 0 18px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 750px) {
+    .skillshowdiv {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactshowdiv {
+        margin: 5px;
+    }
+
+    .contadivcls {
+        font-size: 16px;
+        margin-top: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .fullnamecls>h3 {
+        font-size: 14px;
+    }
+
+    .fullnamecls>h1 {
+        font-size: 40px;
+    }
+
+    .fullnamecls>h2 {
+        font-size: 20px;
+    }
+
+    .clsftrinfodiv {
+        width: 85%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .proimg {
+        height: 50vh;
+    }
+
+    .prodet>h2 {
+        font-size: 30px;
+    }
+
+    .prodet {
+        padding: 20px;
+    }
+
+    .prodet>p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+        margin: 20px 0;
+    }
+
+    .infolabelprt {
+        flex-direction: column;
+    }
+
+    .infolabelprt>p {
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .infolabelprt>p:first-child {
+        margin-bottom: 5px;
+        width: auto;
+    }
+
+    .infolabelprt>p:nth-child(2) {
+        display: none;
+    }
+
+    .infolabelprt>p:last-child {
+        width: auto;
+    }
+
+    .cvdownloadcls {
+        margin: 20px 0;
+    }
+
+    .workedcmny {
+        margin: 0;
+    }
+
+    .clsinfodeetlbl {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .partofinfo {
+        margin-bottom: 30px;
+    }
+
+    .infodescription {
+        padding: 25px 0;
+    }
+
+    .mobwidth {
+        width: 120px;
+    }
+
+    .infosvgdiv {
+        margin-right: 10px;
+    }
+
+    .infosvgdiv>svg {
+        height: 40px;
+        padding: 10px;
+    }
+
+    .yearofedu {
+        font-size: 13px;
+    }
+
+    .eduname {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .eduinsi {
+        font-size: 13px;
+    }
+
+    .eduquote>li {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+
+    .skillshowdiv {
+        padding: 20px 10px;
+        margin: 10px 5px;
+    }
+
+    .skillshowdiv>h3 {
+        font-size: 14px;
+    }
+
+    .freecontdiv>h2 {
+        font-size: 20px;
+    }
+
+    .freecontdiv>p {
+        margin: 8px 0 14px;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .contactblock>h2 {
+        font-size: 25px;
+    }
+
+    .infocontdes {
+        padding: 15px 0;
+    }
+
+    .contactshowdiv {
+        width: 85%;
+    }
+
+    .projhead>h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .projhead>p {
+        font-size: 14px;
+    }
+
+    .projhead {
+        margin: 0px 0 10px;
+    }
+
+    .proexpdiv {
+        margin-bottom: 0px;
+    }
+
+    .freecontdiv {
+        padding: 50px 10px;
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    .aboutpara {
+        font-size: 14px;
+    }
+
+    .clsftrinfodiv {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ftrlistcls>li {
+        font-size: 14px;
+    }
+
+    .contaftrdivcls {
+        font-size: 14px;
+    }
+
+    .clsfooter {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .fullnamecls>h1 {
+        font-size: 25px;
+        margin: 15px 0;
+    }
+
+    .fullnamecls>h2 {
+        font-size: 17px;
+    }
+
+    .fullnamecls>h3 {
+        font-size: 12px;
+    }
+
+    .contactshowdiv {
+        width: 100%;
+    }
+
+
 }

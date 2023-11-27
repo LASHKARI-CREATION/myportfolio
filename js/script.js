@@ -1,5 +1,5 @@
 const textContainer = document.getElementById("text-container");
-const texts = ["Web Designer.", "HTML Devloper.", "Photographer.", "Sketch Artist.", "Cricketer."];
+const texts = ["Web Designer.", "Freelancer.", "HTML Devloper.", "Photographer.", "Sketch Artist.", "Cricketer."];
 let currentIndex = 0;
 const delay = 100; // Delay in milliseconds between each text
 
@@ -119,6 +119,21 @@ $(document).ready(function () {
         $("#eigtdet").hide(300);
     });
 
+
+
+    $(".showmenu").click(function () {
+        $(".hidemenu").show();
+        $(".showmenu").hide();
+        $(".closemenu").show();
+
+    });
+
+    $(".closemenu").click(function () {
+        $(".hidemenu").hide();
+        $(".showmenu").show();
+        $(".closemenu").hide();
+
+    });
 });
 
 

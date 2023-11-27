@@ -1,0 +1,1054 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+.clsdash {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.clsnavbar {
+    width: 84px;
+    background: #1F2F3E;
+    height: 100%;
+    position: relative;
+}
+
+.navscnddiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.navsvgalignmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navsvgalign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navmenu {
+    color: #8FA9C3;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    display: none;
+}
+
+.clsnavsvg {
+    height: 20px;
+    cursor: pointer;
+}
+
+.clsclosnav{
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.closesvgmob {
+    opacity: 1;
+    vector-effect: none;
+    fill: #8FA9C3;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 4;
+    stroke-linecap: square;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 3.20000005;
+    stroke-opacity: 1
+}
+
+.clsnavsvgmob {
+    display: none;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.exitbtn {
+    position: absolute;
+    bottom: 20px;
+    right: 38%;
+    cursor: pointer;
+}
+
+.dshmaincontent {
+    width: calc(100% - 84px);
+    height: 100vh;
+    overflow: auto;
+}
+
+.dashhedsec {
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FEFEFE;
+    border-bottom: 1px solid #EFEEEE;
+}
+
+.cmpnylogodiv {
+    display: flex;
+    align-items: center;
+}
+
+.logotxt {
+    color: #ED8D39;
+}
+
+.clshotldrop {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 0px;
+    background: #F4F9FF;
+    margin: 0 10px;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid #EFF5FB;
+}
+
+.linkimg {
+    height: 13px;
+}
+
+.hdrhtltxt {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.hdrdropdwn {
+    background-color: #33BFBF;
+    padding: 5px;
+    display: flex;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+
+.dwnhead {
+    height: 20px;
+}
+
+.sidehdrsec {
+    display: flex;
+    align-items: center;
+}
+
+.hdrsdsrch {
+    background: #F4F9FF;
+    border: 1px solid #EFF5FB;
+    padding: 5px;
+    display: flex;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.hdrsdsrch>img {
+    height: 15px;
+}
+
+.borderlft {
+    border-left: 2px solid #ECECEC;
+    height: 18px;
+    margin: 0 5px;
+}
+
+.sellvochrdiv {
+    background: linear-gradient(0deg, #33BFBF, #33BFBF), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sellvochrdiv>img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+.userinfo {
+    display: flex;
+    align-items: center;
+}
+
+.userpic {
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 44px;
+}
+
+.usrname {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.userdetails {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userdetails>img {
+    height: 12px;
+}
+
+.lastsection {
+    display: flex;
+
+}
+
+.lastsecrdm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.btmactiondivs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 31%;
+    height: 114px;
+    background: #FCFCFD;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.actionname>label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.actionname>p {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.actionimgs {
+    background: linear-gradient(144.16deg, rgba(51, 191, 191, 0.1) 19.06%, rgba(51, 191, 191, 0) 79.03%);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.actionimgs>img {
+    height: 20px;
+}
+
+.recentactdiv {
+    width: 40%;
+    height: 402px;
+    padding: 10px;
+    margin: 10px;
+    background: #FCFCFD;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+    border-radius: 10px;
+}
+
+.rcntactdiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.rdmvchrdiv {
+    height: 315px;
+    overflow: auto;
+}
+
+.rdmvchrdiv::-webkit-scrollbar {
+    display: none;
+}
+
+.rcntdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.rcntactdiv>label {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.recallbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 142px;
+    min-width: 142px;
+    padding: 10px 14px;
+    background: #F4F9FF;
+    border: 1px solid #DAEBFC;
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.recdisply {
+    justify-content: space-between;
+    padding: 5px 30px;
+    color: #1f2f3ecc;
+}
+
+.actlabel {
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 10px;
+    border-left: 3px solid #39A3DE;
+}
+
+.secagotxt {
+    color: #9FA6AB;
+}
+
+.recbtn {
+    background: #39A3DE;
+    font-size: 14px;
+    color: white
+}
+
+
+
+
+
+
+
+
+
+
+.allchartdiv {
+    display: flex;
+    align-items: center;
+}
+
+.frstchrtdiv {
+    width: 60%;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+
+.smlchrtwdth {
+    display: flex;
+    width: 30%;
+}
+
+
+.chartmdiv {
+    padding: 10px;
+    margin-right: 60px;
+    background: #FCFCFD;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+    border-radius: 10px;
+}
+
+.chart1>div,
+.chart2>div,
+.chart3>div {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revsumdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.sumoptions {
+    display: flex;
+    background: #F4F9FF;
+    border: 1px solid #EFF5FB;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.sumbyyear,
+.sumbymnth,
+.sumbyweek {
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sumbyweek {
+    background: #33BFBF;
+    color: #FFFFFF;
+}
+
+.chrtrevbtmdiv {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chrtaccodiv {
+    display: flex;
+    align-items: center;
+}
+
+.chrtimgdiv {
+    background: #F5F6F9;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chrtdiscrip {
+    padding-left: 10px;
+}
+
+.chrtdistext {
+    font-weight: bold;
+    font-size: 14px;
+    color: #1F2F3E;
+}
+
+.chrttotlprc {
+    font-size: 13px;
+    color: #9FA6AB;
+}
+
+.chart2,
+.chart3 {
+    display: none;
+}
+
+.pichartdiv {
+    background: #FCFCFD;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+.pichrtbtmdiv {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F4F9FF;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.pichrtimgdiv {
+    background: #F5F6F9;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pipaiddiv {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px 15px;
+    background: #FFFFFF;
+    border-radius: 9px;
+}
+
+.piinsidediv {
+    height: 145px;
+    width: 145px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(51, 191, 191, 0.43) 0%, #FFFFFF 100%);
+    top: 32px;
+    left: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.totlrevtxt {
+    text-align: center;
+    color: #33BFBF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.vochdiv {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    position: absolute;
+    background: #FDFDFF;
+    box-shadow: 0px 24.5802px 11.1728px rgba(62, 58, 100, 0.1);
+    top: 40px;
+    left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vochpaiddiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.vchtxt {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.vouchprice {
+    color: #9FA6AB;
+    font-size: 13px;
+}
+
+
+
+.bestseldiv {
+    background: #FCFCFD;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+    border-radius: 10px;
+    width: 30%;
+    padding: 0px 20px;
+}
+
+.bestsltext {
+    margin: 10px 0 30px;
+}
+
+.clsmiddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chrispec {
+    background: rgba(7, 36, 72, 0.1);
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #1F2F3E;
+    margin: 15px 0;
+}
+
+.nosoldtxt {
+    color: #9FA6AB;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.pichrt1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+.chart4 {
+    width: 200px;
+    position: relative;
+}
+
+.pichrt2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+}
+
+.sndchrtdiv {
+    width: 40%
+}
+
+.vouchdiv2 {
+    background: linear-gradient(144.16deg, rgba(255, 169, 65, 0.1) 19.06%, rgba(255, 169, 65, 0) 79.03%);
+}
+
+.vouchdiv3 {
+    background: linear-gradient(144.16deg, rgba(255, 51, 100, 0.1) 19.06%, rgba(255, 51, 100, 0) 79.03%);
+}
+
+.vouchdiv4 {
+    background: linear-gradient(144.16deg, rgba(84, 186, 74, 0.1) 19.06%, rgba(84, 186, 74, 0) 79.03%);
+}
+
+.vouchdiv5 {
+    padding: 20px 23px;
+    background: linear-gradient(144.16deg, rgba(255, 97, 80, 0.1) 19.06%, rgba(255, 97, 80, 0) 79.03%);
+}
+
+.vouchdiv6 {
+    background: linear-gradient(144.16deg, rgba(7, 36, 72, 0.1) 19.06%, rgba(7, 36, 72, 0) 79.03%);
+}
+
+.vouchdiv7 {
+    background: linear-gradient(144.16deg, rgba(255, 51, 100, 0.1) 19.06%, rgba(255, 51, 100, 0) 79.03%);
+}
+
+.vouchdiv8 {
+    background: linear-gradient(144.16deg, rgba(237, 141, 57, 0.1) 19.06%, rgba(237, 141, 57, 0) 79.03%);
+}
+
+.vouchdiv9 {
+    padding: 23px 20px;
+    background: linear-gradient(144.16deg, rgba(36, 135, 144, 0.1) 19.06%, rgba(36, 135, 144, 0) 79.03%);
+}
+
+
+
+
+
+
+
+
+
+
+
+a:hover,
+body button:hover {
+    text-decoration: none;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
+
+
+.datepicker {
+    position: relative;
+}
+
+.calendar {
+    border: 1px solid #b6daff;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    width: 300px;
+    background: #F4F9FF;
+    z-index: 11;
+}
+
+.datepicker input {
+    margin: 0;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #9FA6AB;
+    background-clip: padding-box;
+    background: #F4F9FF;
+    border: 1px solid #EFF5FB;
+    border-radius: 3px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+.datepicker input:focus {
+    color: #495057;
+    /* background-color: #fff; */
+    border-color: #33bfbf;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #33bfbf75;
+}
+
+.datepicker i {
+    position: absolute;
+}
+
+.icon {
+    padding: 16px;
+    font-size: larger;
+    color: #555555;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title .arrow-control {
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+}
+
+.title .arrow-control:hover {
+    background-color: #33bfbf;
+    color: white;
+    cursor: pointer;
+}
+
+.title .year-month:hover,
+.title .year:hover {
+    color: #cccccc;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.week .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.28%;
+    font-weight: bold;
+}
+
+.list,
+.week {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.list .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-top: 1em;
+    /* padding: 7.14%; */
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.list .date:hover,
+.list .date:focus,
+.list .mon:hover,
+.list .mon:focus {
+    background-color: #33bfbf;
+    color: white;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #33bfbf !important;
+    color: white;
+}
+
+.list .fadeout {
+    color: #eeeeee;
+}
+
+.list .today {
+    color: #33bfbf;
+}
+
+.list .today.active {
+    color: white;
+}
+
+.list .mon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    margin-top: 1em;
+    /* padding: 7.14%; */
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+#yearlist .mon:first-child,
+#yearlist .mon:last-child {
+    color: #9d9d9d;
+}
+
+.d-none {
+    display: none;
+}
+
+.datergtlft {
+    height: 30px;
+    padding-top: 3px;
+}
+
+.datediv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #EFEEEE;
+}
+
+.datepickrcls {
+    position: relative;
+    width: 300px;
+}
+
+.clsdtimg {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+
+.clsexprtpdf {
+    padding: 5px 10px;
+    width: 120px;
+    background: #33BFBF;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+canvas{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+@media(max-width:1550px) {
+
+    .chartmdiv {
+        margin-right: 15px;
+    }
+
+    .btmactiondivs {
+        width: 30%;
+    }
+}
+
+@media(max-width:1300px) {
+    .allchartdiv {
+        flex-wrap: wrap;
+    }
+
+    .frstchrtdiv {
+        width: 100%;
+    }
+
+    .sndchrtdiv {
+        width: 100%;
+    }
+
+    .chart1>div,
+    .chart2>div,
+    .chart3>div {
+        height: 400px;
+    }
+
+    .lastsection {
+        flex-wrap: wrap;
+    }
+
+    .lastsecrdm {
+        width: 100%;
+    }
+
+    .btmactiondivs {
+        width: 31%;
+    }
+
+    .recentactdiv {
+        width: 100%;
+    }
+}
+
+@media(max-width:960px) {
+    .btmactiondivs {
+        width: 30%;
+    }
+}
+
+@media(max-width:830px) {
+    .dashhedsec {
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .cmpnylogodiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sidehdrsec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .chart1>div,
+    .chart2>div,
+    .chart3>div {
+        height: auto;
+    }
+
+    .frstchrtdiv {
+        flex-wrap: wrap;
+    }
+
+    .smlchrtwdth {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .bestseldiv {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btmactiondivs {
+        width: 46%;
+    }
+}
+
+@media(max-width:610px) {
+    .btmactiondivs {
+        width: 100%;
+    }
+
+    .clslogmob {
+        display: flex;
+        align-items: center;
+    }
+
+    .clsnavsvgmob {
+        display: block;
+    }
+
+    .clsnavbar {
+        width: calc(100% - 70px);
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .dashhedsec {
+        padding: 10px 15px;
+    }
+
+    .exitbtn {
+        right: 48%;
+    }
+
+    .navmenu {
+        display: block;
+    }
+
+    .navsvgalignmenu{
+        padding-right: 20px;
+        justify-content: flex-end;
+    }
+
+    .navsvgalign {
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .clsnavbar {
+        display: none;
+    }
+
+    .dshmaincontent {
+        width: 100%;
+    }
+
+    .mobhidesvg{
+        display: none;
+    }
+
+    .clsclosnav{
+        display: block;
+    }
+
+    .chrtrevbtmdiv{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width:500px){
+    .datepickrcls {
+        width: 220px;
+    }
+
+    .clsdtimg {
+        left: 25px;
+    }
+
+    .week .day {
+        width: 14%;
+        font-size: 12px;
+    }
+
+    .list .date {
+        width: 26px;
+        height: 26px;
+    }
+
+    .calendar{
+        width: 220px;
+    }
+
+    .clsexprtpdf {
+        padding: 10px;
+        width: 95px;
+        font-size: 12px;
+    }
+}
+

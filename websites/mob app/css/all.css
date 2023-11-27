@@ -1,0 +1,4157 @@
+:root {
+    /* --backgroundcolor: #d6faff; */
+    --backgroundcolor: white;
+    --lightborder: #add0d5;
+    --border: #008fa3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+.onlymobileallow {
+    display: none;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+    .onlymobileallow {
+        display: block;
+    }
+
+    .onlymobileerrtxt{
+        display: none;
+    }
+
+}
+
+.allcontentdiv {
+    display: flex;
+    justify-content: center;
+    background-color: #525252;
+}
+
+.bodybgclr {
+    max-width: 450px;
+    width: 100%;
+    border: 2px solid var(--border);
+    background-color: white;
+}
+
+
+
+/* slider css start */
+
+.mySlideshow {
+    display: none;
+}
+
+.slideshowimg {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshowcontainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* Caption text */
+.captext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.clsslddt {
+    text-align: center;
+    position: absolute;
+    bottom: 4%;
+    left: 45%;
+}
+
+.slidedot {
+    height: 7px;
+    width: 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-right: 3px;
+}
+
+.activeslide {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fadeslide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeslide {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .captext {
+        font-size: 11px
+    }
+}
+
+
+
+/* slider css end */
+
+
+
+
+
+
+
+
+/*     header start    */
+
+.mainhead {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: var(--backgroundcolor);
+    border-bottom: 2px solid var(--border);
+    z-index: 1;
+}
+
+.cmpnymainheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.navscnddiv {
+    display: flex;
+    align-items: center;
+}
+
+.navsideimage {
+    height: 30px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.navimage {
+    height: 20px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.clsspanimg {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.companylogoimg {
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cmnyname {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.lginbutton {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--border);
+    font-weight: bold;
+}
+
+.currencyoption {
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--border);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    background-color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+.currencyoption:focus-visible {
+    outline: 0px;
+}
+
+.clsaftrlgnhd {
+    display: none;
+}
+
+.searchinputdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.searchinput {
+    width: 95%;
+    margin: 10px;
+    height: 30px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.searchinput:focus-visible {
+    outline: 0px;
+}
+
+.searchicon {
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 60px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+/*  side nav bar start   */
+
+.sidenavdiv {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffffa1;
+    display: none;
+}
+
+/* .sidenavprimarydiv {
+    width: 85%;
+    height: 100vh;
+    border-right: 2px solid var(--border);
+    background-color: white;
+} */
+
+.navheadmaindiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: var(--backgroundcolor);
+    border-bottom: 2px solid var(--border);
+}
+
+.navheadlogindiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.openaccpropage {
+    display: flex;
+    align-items: center;
+}
+
+.acntimg {
+    height: 30px;
+    cursor: pointer;
+}
+
+.lgnsinupp {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.navlistdiv {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    height: 50px;
+    border-top: 1px solid #d5d5d5;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navlisticon {
+    height: 18px;
+    margin-right: 16px;
+}
+
+.navlistname {
+    text-transform: capitalize;
+    width: 100%;
+    color: var(--border);
+}
+
+.sidenavclsbtn {
+    height: 28px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/*  side nav bar end   */
+
+
+/*     header end    */
+
+
+
+
+
+
+
+/*   category div start   */
+
+.categorymaindiv {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.categorymaindiv::-webkit-scrollbar {
+    display: none;
+}
+
+.categoryimgdiv {
+    width: 72px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.caticndiv {
+    padding: 14px 17px;
+    border-radius: 50%;
+    background-color: var(--backgroundcolor);
+    border: 2px solid var(--border);
+}
+
+.categoryicon {
+    height: 35px;
+}
+
+.categoryimg {
+    height: 70px;
+}
+
+.cattext {
+    font-size: 13px;
+    color: gray;
+}
+
+/*   category div end   */
+
+
+/* trending div start  */
+
+.trendingtextdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: var(--border);
+}
+
+.trendingtext {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.trendingbtn {
+    text-transform: capitalize;
+    padding: 4px 8px;
+    background-color: var(--backgroundcolor);
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    font-size: 12px;
+    color: var(--border);
+}
+
+.trendingimagediv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+}
+
+.trndimgdiv {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    margin: 20px 12px;
+    margin-top: 0;
+    padding-bottom: 5px;
+    cursor: pointer;
+    /* border: 1px solid var(--border); */
+    border-radius: 3px;
+    box-shadow: silver 0px 3px 6px, silver 0px 3px 6px;
+}
+
+.trendingimage {
+    border-radius: 2px 2px 0 0;
+    min-width: 85px;
+    min-height: 85px;
+    object-fit: cover;
+}
+
+.trendingimagetext {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.prodcuttextcolor {
+    color: var(--border);
+    /* font-size: 14px; */
+}
+
+/* trending div end  */
+
+
+
+
+/* sponsored div start */
+
+.sponsrdcls {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    background-color: white;
+    margin: 20px 10px;
+    margin-top: 0;
+    padding-bottom: 5px;
+    cursor: pointer;
+    /* border: 1px solid var(--border); */
+    border-radius: 3px;
+    box-shadow: silver 0px 3px 6px, silver 0px 3px 6px;
+}
+
+/* sponsored div end */
+
+
+
+
+/* Best sellers div start */
+
+.bestsellmdiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prdctimgdiv {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    background-color: var(--bggreencolor);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* border-left: 2px solid #d5d5d5; */
+    box-shadow: silver 0px 3px 6px, silver 0px 3px 6px;
+}
+
+/* Best sellers div end */
+
+
+
+/* socialmedia icon div start */
+
+.gramtxt {
+    font-weight: bold;
+    color: var(--border);
+    padding-left: 10px;
+}
+
+.mommisstxt {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #a6a6a6;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.socialainimg {
+    width: 100%;
+}
+
+.socialimg {
+    width: 50%;
+}
+
+.hastagtxt {
+    text-align: center;
+    font-size: 14px;
+    color: #4b4b4b;
+    margin-top: 10px;
+}
+
+.socialdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socialiconimg {
+    height: 30px;
+    border: 1px solid #d5d5d5;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+/* socialmedia icon div end */
+
+
+/* customer view div start */
+
+.custreviewdiv {
+    display: flex;
+    overflow: auto;
+}
+
+.custreviewdiv::-webkit-scrollbar {
+    display: none;
+}
+
+.contmdiv {
+    box-shadow: silver 0px 3px 6px, silver 0px 3px 6px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.cusdivwidth {
+    width: 235px;
+    text-align: center;
+    color: gray;
+}
+
+.custtxt {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.cusnametxt {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.cusproname {
+    text-transform: capitalize;
+    color: var(--border);
+}
+
+.btmimgtxt {
+    box-shadow: silver 0px 3px 6px, silver 0px 3px 6px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    position: absolute;
+    bottom: -30px;
+    left: 115px;
+}
+
+
+/* customer view div end */
+
+
+
+/* bottom menu div start */
+
+.bottomicondiv {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    height: 52px;
+    background-color: var(--backgroundcolor);
+    border-top: 2px solid var(--border);
+    align-items: center;
+}
+
+.btmmenubar {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--border);
+    background-color: var(--backgroundcolor);
+    flex-grow: 1;
+}
+
+.btmicondiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 25%;
+}
+
+.btmimgcls {
+    height: 25px;
+}
+
+/* bottom menu div end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ product listing page start ------ */
+
+.opnproductdetpage {
+    display: none;
+}
+
+.detheaddiv {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: var(--backgroundcolor);
+}
+
+.dethomeimg {
+    height: 25px;
+}
+
+.clsitemscount {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+
+.detdolname {
+    text-transform: uppercase;
+}
+
+.filsortcls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    background-color: var(--backgroundcolor);
+    font-weight: bold;
+    color: var(--border);
+    border: 2px solid var(--border);
+    border-right: 0px;
+    position: relative;
+}
+
+.openfil {
+    cursor: pointer;
+}
+
+.sortseloption {
+    border: 0px;
+    background-color: transparent;
+    color: var(--border);
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sortseloption:focus-visible {
+    outline: 0px;
+}
+
+.clsproductlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.detcollecimg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 46%;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid var(--lightborder);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.prdctimgsdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lghtgrenclr {
+    color: #25be25cc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.lghtorngclr {
+    color: #ffab2e;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.detwishhrtout {
+    height: 22px;
+}
+
+.detwishhrt {
+    height: 22px;
+    display: none;
+}
+
+.clsproname {
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--border);
+}
+
+.clsprocode {
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--border);
+}
+
+
+
+
+/*   filter css start */
+
+.clsmainfildiv {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+    overflow: auto;
+}
+
+.clsfilmr {
+    margin: 20px 0;
+}
+
+.clsfilname {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.rangesliderfiltcls {
+    position: relative;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.rangesliderfiltcls input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: -7px;
+    width: 100%;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.rangesliderfiltcls input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.rangesliderfiltcls input::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+.rangesliderfiltcls input::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+
+.rangesliderfiltcls input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+
+.rangesliderfiltcls input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+.rangeValue {
+    width: 30px;
+}
+
+.outputrngdv,
+.outputrngdvtwo,
+.outputrngdvthree,
+.bwdash {
+    width: auto;
+    color: var(--border);
+    display: inline-block;
+    font: bold 15px/30px Helvetica, Arial;
+}
+
+input[type=range] {
+    /* -webkit-appearance: none; */
+    appearance: none;
+    background: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+    background: transparent;
+}
+
+input[type=range]::-ms-track {
+    height: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-track {
+    height: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--border);
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+input[type=range]::-ms-thumb {
+    /* -webkit-appearance: none; */
+    appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #555;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+input[type=range]::-moz-range-thumb {
+    /* -webkit-appearance: none; */
+    appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #555;
+    margin-top: -5px;
+    position: relative;
+    z-index: 10000;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+.clsfullrange,
+.clsinclrange,
+.clsfullrangetwo,
+.clsfullrangethree,
+.clsinclrangetwo,
+.clsinclrangethree {
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0px;
+    position: absolute;
+    background: #DDD;
+}
+
+.clsinclrange,
+.clsinclrangetwo,
+.clsinclrangethree {
+    background: var(--lightborder);
+}
+
+.clsfillisttxt {
+    color: var(--border);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-bottom: 1px solid #d5d5d5;
+    position: relative;
+}
+
+.catfilrgtarrow,
+.prtypefilrgtarrow,
+.metpfilrgtarrow,
+.metclrfilrgtarrow,
+.brndsfilrgtarrow,
+.genfilrgtarrow,
+.centfilrgtarrow {
+    height: 5px;
+    width: 5px;
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 5px;
+    top: 21px;
+}
+
+.catfildownarrow,
+.prtypefildownarrow,
+.metpfildownarrow,
+.metclrfildownarrow,
+.brndsfildownarrow,
+.genfildownarrow,
+.centfildownarrow {
+    height: 5px;
+    width: 5px;
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    transform: rotate(135deg);
+    position: absolute;
+    right: 5px;
+    top: 21px;
+    display: none;
+}
+
+.chaekmaindiv {
+    border: 1px solid #d5d5d5;
+    border-top: 0px;
+}
+
+.catoption,
+.prtypeoption,
+.metpoption,
+.metclroption,
+.brndsoption,
+.genoption,
+.centoption {
+    display: none;
+}
+
+.clsfilclosebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+}
+
+.filcheckboxdiv {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.filcheckheight {
+    height: 11px;
+    width: 11px;
+}
+
+.checkclstxt {
+    font-size: 13px;
+    color: var(--border);
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+
+.rafltrbtns {
+    display: flex;
+    margin-top: 25px;
+}
+
+.rsetappbtn {
+    width: 50%;
+    padding: 10px 0;
+    border: 1px solid var(--border);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/*   filter css end */
+
+
+
+
+
+
+
+/* ------ product listing page end ------ */
+
+
+
+
+
+
+
+
+
+
+
+/* product details page start */
+
+.prodetpagemdiv {
+    display: none;
+}
+
+.headmdiv {
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: var(--backgroundcolor);
+    border-bottom: 2px solid var(--border);
+    z-index: 1;
+}
+
+.detimgicon {
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.mySlidescls {
+    display: none
+}
+
+.clshmimg {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshowcls {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.clsprevbtn,
+.clsnextbtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #a5a5a5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.clsnextbtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* The dots/bullets/indicators */
+.clsmovingdot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.6s ease;
+}
+
+.clsactivedot,
+.clsmovingdot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.clsimgfade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes clsimgfade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .clsprevbtn,
+    .clsnextbtn {
+        font-size: 11px
+    }
+}
+
+.selectiondiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.optionname {
+    /* font-weight: bold; */
+    width: 35%;
+    color: var(--border);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.fillistcls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    padding: 5px;
+    background-color: var(--backgroundcolor);
+    font-weight: bold;
+    color: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+.listseloption {
+    border: 0px;
+    background-color: transparent;
+    color: var(--border);
+    font-size: 15px;
+    /* font-weight: bold; */
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.listseloption:focus-visible {
+    outline: 0px;
+}
+
+.listpricediv {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    text-transform: capitalize;
+    border-top: 1px solid #d5d5d5;
+}
+
+.listproprice {
+    font-weight: bold;
+    color: var(--border);
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.setcheckp {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.breakuptxt {
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.toglprbrkup {
+    display: none;
+}
+
+.clsbrkupdiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.clsdetbrkup {
+    text-align: center;
+    padding: 0 5px;
+    color: gray;
+}
+
+.txtpricename {
+    font-weight: bold;
+    width: auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.brkprice {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.instockdiv {
+    /* display: flex; */
+    color: #28a745;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clsinstocktxt {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.infocircle {
+    height: 15px;
+    cursor: pointer;
+}
+
+.addtwishpd {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    height: 25px;
+}
+
+.wishhrtbtn {
+    display: none;
+}
+
+.clsbdtop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clsproinfo {
+    padding: 10px 8px;
+    width: 45%;
+}
+
+.cldproductdet {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border);
+    margin: 10px 0;
+}
+
+.clsdetinfodiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.clsstickyprice {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    border-top: 2px solid var(--border);
+    color: var(--border);
+}
+
+.stickyrate {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.stckyaddcart {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.stickydiacart {
+    width: 50%;
+    text-align: center;
+    padding: 15px 0px;
+    border-top: 1px solid var(--border);
+    background-color: var(--backgroundcolor);
+    cursor: pointer;
+}
+
+.similardiv {
+    display: flex;
+}
+
+.similarbtntxt {
+    width: 50%;
+    text-align: center;
+    padding: 12px 0;
+    text-transform: uppercase;
+    color: var(--border);
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.withmatch {
+    border-bottom: 3px solid var(--border);
+}
+
+.similarimgdiv {
+    overflow: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #d5d5d5;
+    /* background-image: linear-gradient(200deg, white, #008fa3,#add0d5, #ffffff); */
+}
+
+.similarimgdiv::-webkit-scrollbar {
+    display: none;
+}
+
+.youmaylikediv {
+    display: none;
+}
+
+.smlrimgdisplay {
+    display: flex;
+    align-items: center;
+}
+
+.divsmlrbrder {
+    border-radius: 5px;
+}
+
+.matchwithmgdiv {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    margin-left: 25px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    border: 1px solid #d5d5d5;
+    background-color: white;
+}
+
+.imgsmlrbrder {
+    border-radius: 5px 5px 0 0;
+}
+
+.smlrimagetext {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+.smlrprotextcolor {
+    color: var(--border);
+    font-size: 14px;
+}
+
+
+/* product details page end */
+
+
+
+
+
+
+
+
+
+
+/* categories div start  */
+
+.sidecatoption {
+    display: none;
+    height: 100vh;
+    overflow: auto;
+}
+
+.cattxtdiv {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d5d5d5;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.catbackarrw {
+    height: 23px;
+    padding-left: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.srchcatcls {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    height: 25px;
+}
+
+.catblockmdiv {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.exptxtdiv {
+    width: 60%;
+    padding: 0 15px;
+}
+
+.clsexptxt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.clsinfotxt {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.catexpimg {
+    width: 40%;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+/* categories div end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- search page start -------- */
+
+.opennewsearch {
+    display: none;
+}
+
+.srctypediv {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d5d5d5;
+    position: sticky;
+    top: 0;
+    background-color: var(--backgroundcolor);
+    z-index: 1;
+}
+
+.srcharrow {
+    height: 25px;
+    padding-left: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.searchtype {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 90%;
+    height: 35px;
+    font-size: 14px;
+    border: 0px;
+    background-color: #ebebeb;
+}
+
+.searchtype:focus-visible {
+    outline: 0px;
+}
+
+.trndingdiv {
+    text-transform: capitalize;
+    padding: 15px 0;
+    padding-left: 10px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.trndigsrchtxt {
+    font-size: 11px;
+    font-weight: bold;
+    color: #8b8b8b;
+}
+
+.srchimgtxtdiv {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #444444;
+}
+
+.srchimg {
+    height: 17px;
+    margin-right: 7px;
+    opacity: 0.7;
+}
+
+.lskritrndtxt {
+    text-transform: uppercase;
+    margin: 15px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.trendingimgdiv {
+    overflow: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #d5d5d5;
+    background-image: linear-gradient(200deg, white, #008fa3, #add0d5, #ffffff);
+}
+
+.clsvwalldiv {
+    width: 150px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clsarrowbrdr {
+    background-color: var(--border);
+    padding: 15px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.trnbagimg {
+    background-image: linear-gradient(200deg, white, #008fa3, #add0d5, #ffffff);
+    background-size: cover;
+    padding: 35px 0;
+    margin-top: 15px;
+}
+
+.trendingimgdiv::-webkit-scrollbar {
+    display: none;
+}
+
+.trnimgdisplay {
+    display: flex;
+    align-items: center;
+}
+
+.scrollimgdiv {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-left: 20px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    border: 1px solid #d5d5d5;
+    background-color: white;
+}
+
+.divbrder {
+    border-radius: 5px;
+}
+
+.imgbrder {
+    border-radius: 5px 5px 0 0;
+    min-width: 140px;
+    min-height: 140px;
+}
+
+
+
+.poplistdiv {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    position: relative;
+    border-bottom: 1px solid #d5d5d5;
+    height: 70px;
+    cursor: pointer;
+}
+
+.poplistimg {
+    height: 50px;
+    margin: 0px 15px;
+}
+
+.poplisttxt {
+    font-weight: bold;
+    color: var(--border);
+}
+
+.poplistinfotxt {
+    font-size: 12px;
+    margin-top: 3px;
+    color: #a6a6a6;
+}
+
+.poprgtarrow {
+    height: 5px;
+    width: 5px;
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 20px;
+}
+
+.srchcolbtn {
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* -------- search page end --------  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------  cart page start ------- */
+
+.emptycartpage {
+    display: none;
+}
+
+.cartheadtxt {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+.cartlftarrow {
+    height: 25px;
+    padding-left: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.hedtxtcls {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border);
+    text-align: center;
+}
+
+.wishlisthrt {
+    height: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/* ------- empty cart page start ------- */
+
+.emptycrtpagedv {
+    height: 100vh;
+    overflow: auto;
+}
+
+.cartmdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.emptycartimg {
+    height: 150px;
+    width: 150px;
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+.solighttxt {
+    font-weight: bold;
+    color: var(--border);
+    font-size: 15px;
+}
+
+.letsaddmsg {
+    font-size: 12px;
+    margin-top: 3px;
+    color: #a6a6a6;
+}
+
+.gencatdiv {
+    display: flex;
+    overflow: auto;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: var(--border);
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 10px;
+}
+
+.gencatdiv::-webkit-scrollbar {
+    display: none;
+}
+
+.gendertxt {
+    padding: 5px 22px;
+    margin: 0 10px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: var(--backgroundcolor);
+    cursor: pointer;
+}
+
+/* ------- empty cart page end ------- */
+
+
+/* ------- fill cart page start ------- */
+
+.fillcrtdiv {
+    display: none;
+    padding: 10px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.rembtndiv {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    padding-right: 10px;
+    margin: 10px 0;
+}
+
+.clsbtmrem {
+    padding: 5px 12px;
+    background-color: var(--backgroundcolor);
+    border: 1px solid var(--border);
+    color: var(--border);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.clapadbor {
+    margin-top: 10px;
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+    position: relative;
+}
+
+.crtimgdivcls {
+    display: flex;
+    align-items: center;
+}
+
+.clscrtlistimg {
+    height: 120px;
+    margin: 0 15px;
+    border: 1px solid var(--border);
+}
+
+.produstno {
+    text-transform: uppercase;
+    color: var(--border);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.clsprinfo {
+    font-size: 12px;
+    color: var(--border);
+    text-transform: capitalize;
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clsjemmr {
+    margin-right: 3px;
+}
+
+.clsgrytxtcrt {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.crtitmcountdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    padding: 2px 5px;
+    background-color: var(--backgroundcolor);
+    font-weight: bold;
+    color: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 10px;
+}
+
+.crtclsitmcount {
+    border: 0px;
+    background-color: transparent;
+    color: var(--border);
+    font-size: 16px;
+    font-weight: bold;
+    width: 45px;
+    text-align: center;
+}
+
+.crtclsitmcount:focus-visible {
+    outline: 0px;
+}
+
+.clsremoveimg {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    height: 25px;
+}
+
+.crtclsprice {
+    font-weight: bold;
+    color: var(--border);
+    font-size: 19px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.clsordrmndiv {
+    padding: 20px;
+    margin: 20px 15px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+.clscrtordr {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: var(--border);
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+}
+
+.disflx {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.clsdetinfo {
+    font-size: 12px;
+    color: var(--border);
+    text-transform: capitalize;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clsbtncont {
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 180px;
+    text-align: center;
+    padding: 7px 0;
+    color: var(--border);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* ------- fill cart page end ------- */
+
+
+
+
+/* -------  cart page end ------- */
+
+
+
+
+
+
+
+
+
+
+
+/* payment address page start  */
+
+.paymentaddresspg {
+    display: none;
+    height: 100vh;
+    overflow: auto;
+}
+
+.contaddlftarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.addpaddiv {
+    padding: 0 30px;
+}
+
+.seladdtxtcls {
+    color: var(--border);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.addlinediv {
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+}
+
+.clsflxadd {
+    display: flex;
+    align-items: flex-start;
+}
+
+.radiocheck {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.addlistcls {
+    list-style-type: none;
+    text-transform: capitalize;
+    line-height: 20px;
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.firstlnclr {
+    color: var(--border);
+}
+
+.addeditbtndiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.addedittxt {
+    padding: 5px 0px;
+    border: 1px solid var(--border);
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 140px;
+}
+
+/* address form start  */
+
+.addfrmdiv {
+    margin: 20px 0;
+    display: none;
+}
+
+.frmlsttxt {
+    text-transform: capitalize;
+    color: var(--border);
+}
+
+.clsfrmclr {
+    color: red;
+}
+
+.clsinptstl {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 17px;
+    margin-top: 5px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+.clsinptstl:focus-visible {
+    outline: 0px;
+}
+
+/* address form end  */
+
+/* payment address page end  */
+
+
+
+
+/* payment page start  */
+
+.paymaentpage {
+    display: none;
+    height: 100vh;
+    overflow: auto;
+}
+
+.paymntlftarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.pymntpadd {
+    padding: 0px 30px;
+}
+
+.payimgdisp {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.paymntimg {
+    height: 40px;
+    width: 140px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.payaccountdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.payaccountbtn {
+    padding: 10px 0px;
+    border: 1px solid var(--border);
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}
+
+/* payment page end  */
+
+
+
+/* confirmation page start */
+
+.confirmationpg {
+    display: none;
+    height: 100vh;
+    overflow: auto;
+}
+
+.cnfmpgpadd {
+    padding: 30px;
+    color: gray;
+}
+
+.thankimg {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.thnktxt {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--border);
+    margin-bottom: 15px;
+}
+
+.ordrno {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cnfrmcontdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.cnfrmshopbtn {
+    padding: 10px 0px;
+    border: 1px solid var(--border);
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}
+
+/* confirmation page end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ wishlist page start ------ */
+
+.wishpagemdiv {
+    display: none;
+}
+
+.wishheadtxt {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.wishlftarrow {
+    height: 25px;
+    padding-left: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+
+/* ------ empty wishlist page start ------ */
+
+.emptywishdivcls {
+    text-align: center;
+    margin: 0 20px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.wishtxtcls {
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--border);
+    text-align: center;
+}
+
+.wishhomeimg {
+    height: 25px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.wistxtcls {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+.clsdonttxt {
+    margin: 30px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: gray;
+}
+
+.wishsmalltxt {
+    font-size: 14px;
+    color: gray;
+    margin: 30px 0;
+}
+
+.browsebtn {
+    height: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+/* ------ empty wishlist page end ------ */
+
+
+
+/* ------- fill wishlist page start ------- */
+
+.fillwishdiv {
+    display: none;
+    padding: 10px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.remwishbtndiv {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-right: 10px;
+    margin: 10px 0;
+}
+
+.clswishbtnselect {
+    padding: 5px 12px;
+    background-color: var(--backgroundcolor);
+    /* border: 1px solid var(--border); */
+    color: var(--border);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.checkselwish {
+    margin-right: 5px;
+}
+
+.clswishbtmrem {
+    padding: 5px 12px;
+    background-color: var(--backgroundcolor);
+    border: 1px solid var(--border);
+    color: var(--border);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.clsspadbor {
+    margin-top: 10px;
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+    position: relative;
+}
+
+.wishimgdivcls {
+    display: flex;
+    align-items: center;
+}
+
+.clswislistimg {
+    height: 120px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border: 1px solid var(--border);
+}
+
+.clproductno {
+    text-transform: uppercase;
+    color: var(--border);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.clsprinfowish {
+    font-size: 12px;
+    color: var(--border);
+    text-transform: capitalize;
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clswishjemmr {
+    margin-right: 3px;
+    padding-left: 3px;
+}
+
+.clsgrytxtwsh {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.wshclsprice {
+    font-weight: bold;
+    color: var(--border);
+    font-size: 19px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.movewishbtndiv {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.clswishbtnmove {
+    padding: 5px 12px;
+    background-color: var(--backgroundcolor);
+    border: 1px solid var(--border);
+    color: var(--border);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.clsbtncont {
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 180px;
+    text-align: center;
+    padding: 7px 0;
+    color: var(--border);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.wishremovecheck {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.wishremoveimg {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    height: 25px;
+}
+
+/* ------- fill wishlist page end ------- */
+
+
+/* ------ wishlist page start ------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* profile page start */
+
+.accountmdiv {
+    height: 100vh;
+    overflow: auto;
+    display: none;
+    position: relative;
+}
+
+.clsproftxt {
+    padding: 10px 15px;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.clscoverpic {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+}
+
+.clspropic {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.acclogindiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.acclogtxt {
+    padding: 10px 0px;
+    font-size: 15px;
+    color: var(--border);
+    margin-right: 10px;
+    width: 55%;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.acclistdiv {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    position: relative;
+    border-bottom: 1px solid #d5d5d5;
+    height: 60px;
+    cursor: pointer;
+}
+
+.acclistimg {
+    height: 25px;
+    margin: 10px 15px;
+}
+
+.acclisttxt {
+    font-weight: bold;
+    color: var(--border);
+}
+
+.listinfotxt {
+    font-size: 12px;
+    margin-top: 3px;
+    color: #a6a6a6;
+}
+
+.rgtarrow {
+    height: 5px;
+    width: 5px;
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 20px;
+}
+
+.footerlist {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.spacediv {
+    height: 25px;
+    width: 25px;
+    margin: 10px 15px;
+}
+
+/* profile page end */
+
+
+
+
+
+/* ------- order details page start ------- */
+
+.orderdetmainpage {
+    display: none;
+}
+
+.ordermainpage {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--backgroundcolor);
+    /* position: fixed;
+    top: 0;
+    z-index: 2; */
+    overflow: auto;
+}
+
+.ordrtxtdiv {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d5d5d5;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--backgroundcolor);
+}
+
+.ordrlftarrw {
+    height: 23px;
+    padding-left: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.ordrsrchdiv {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.clsordrsrchtxt {
+    display: flex;
+    align-items: center;
+    width: 62%;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.clsordrinput {
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    border: 0;
+}
+
+.clsordrinput:focus-visible {
+    outline: 0px;
+}
+
+.clsordrfilterdiv {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+    padding: 8px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--border);
+    cursor: pointer;
+}
+
+.filsvg {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.delvrdstatus {
+    padding: 20px;
+    margin: 15px 0;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.delheadcls {
+    display: flex;
+    align-items: center;
+}
+
+.clspkgimg {
+    height: 40px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 7px;
+}
+
+.ordrcheckcls {
+    height: 15px;
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.delivtxtcls {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.clstxtcolr {
+    color: var(--border);
+    font-weight: bold;
+}
+
+.clsdelvrddate {
+    color: gray;
+}
+
+.reviwdivmrg {
+    margin-top: 15px;
+}
+
+.clsquantidiv {
+    padding: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+
+.prdtordrimg {
+    height: 80px;
+}
+
+.clsordrdetdiv {
+    margin-left: 15px;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 20px;
+    color: gray;
+}
+
+.ordrcattext {
+    font-weight: bold;
+    color: var(--border);
+}
+
+.clsrgtordrarrow {
+    height: 8px;
+    width: 8px;
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 18px;
+}
+
+.clsexchngdiv {
+    padding: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.clsexchdot {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.exchngtxt {
+    text-transform: capitalize;
+    color: #808080;
+    font-size: 14px;
+}
+
+.rateprodiv {
+    padding: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    border-radius: 0 0 4px 4px;
+}
+
+.prdtrattext {
+    text-transform: capitalize;
+    color: #808080;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.starsvgdiv {
+    display: flex;
+}
+
+.star {
+    width: 25px;
+    height: 30px;
+    color: #b2b2b2;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.customername {
+    margin-top: 12px;
+    text-transform: capitalize;
+    color: #808080;
+}
+
+.cusboldnm {
+    color: black;
+    text-transform: uppercase;
+}
+
+/* ------- order details page end ------- */
+
+
+
+
+
+
+/* login with email or mobile page start */
+
+.loginwithmobemail {
+    display: none;
+}
+
+.sgninsgnupdiv {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--backgroundcolor);
+}
+
+.sgnlgtarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.txtdivsgn {
+    padding: 0px 30px;
+}
+
+.sgntxtcls {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.sgnconttxt {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.clssgnicon {
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 7px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.clssvg {
+    width: 24px;
+    height: 24px;
+    color: gray;
+}
+
+.svgbtnicon {
+    padding-left: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+/* login with email or mobile page end */
+
+
+/* login with email page start */
+
+.loginwithemail {
+    display: none;
+}
+
+.clsemaildiv {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+
+.lftemailarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.emailtxtdiv {
+    padding: 0 30px;
+}
+
+.mailsgntxt {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.mailacctxt {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.clsmailfieldset {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.resetemailtxt {
+    color: gray;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.emlrsetpass {
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.clsmaillegend {
+    margin-left: 5px;
+    font-size: 10px;
+    color: gray;
+    padding: 0 5px;
+}
+
+.clsmailinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.clsmailinput:focus-visible {
+    outline: 0px;
+}
+
+.emailconbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.clsemailcont {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+/* login with email page end */
+
+
+/* registration form start  */
+
+.registrationdiv {
+    display: none;
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+}
+
+.regheaddiv {
+    padding-left: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.regbackbtn {
+    height: 25px;
+    cursor: pointer;
+}
+
+.regheadtxt {
+    font-weight: bold;
+    color: var(--border);
+    padding-left: 10px;
+}
+
+.regmnumtxt {
+    font-size: 10px;
+    color: #a5a4a8;
+}
+
+.numverdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.regnum {
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.clsfieldset {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.clslegend {
+    margin-left: 5px;
+    font-size: 10px;
+    color: gray;
+    padding: 0 5px;
+}
+
+.passinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.passinput:focus-visible {
+    outline: 0px;
+}
+
+.chartxtdiv {
+    display: none;
+}
+
+.passchrdiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.passchartxt {
+    padding: 2px 5px;
+    background-color: #f5f5f7;
+    color: gray;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.inptnamtxt {
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin: 20px 0;
+}
+
+.clsfullname {
+    width: 100%;
+    border: 0px;
+    padding-left: 10px;
+    height: 15px;
+    margin: 10px 0;
+}
+
+.clsfullname:focus-visible {
+    outline: 0px;
+}
+
+.mlfldiv {
+    display: flex;
+    margin: 20px 0;
+}
+
+.mlfltxt {
+    width: 50%;
+    border: 1px solid gray;
+    padding: 7px 0;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+
+.actrectxt {
+    font-size: 10px;
+    color: #a5a4a8;
+    padding-left: 20px;
+    text-transform: initial;
+}
+
+.refcodetxt {
+    font-size: 12px;
+    text-transform: initial;
+    margin: 20px 0;
+    color: var(--border);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.crtaccbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.clspadlft {
+    padding: 0 30px;
+}
+
+.clsmobdiv {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    margin: 10px 0;
+    border-radius: 2px;
+    height: 37px;
+}
+
+.countrycode {
+    padding-left: 15px;
+    color: gray;
+}
+
+.clsaddnum {
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 5px;
+    border: 0;
+    border-left: 1px solid var(--border);
+    font-size: 15px;
+}
+
+.clsaddnum:focus-visible {
+    outline: 0px;
+}
+
+.regfrmcodetxt {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 11px;
+    border-radius: 7px;
+    color: gray;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* registration form end  */
+
+
+/* mobile login page start */
+
+.mobileloginpg {
+    display: none;
+}
+
+.clsmobldiv {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+
+.lftmoblarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.mobltxtdiv {
+    padding: 0 30px;
+}
+
+.moblsgntxt {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.moblacctxt {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.clsmoblfieldset {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.clsmobllegend {
+    margin-left: 5px;
+    font-size: 10px;
+    color: gray;
+    padding: 0 5px;
+}
+
+.clsmoblinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.clsmoblinput:focus-visible {
+    outline: 0px;
+}
+
+.moblconbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.clsmobllcont {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+/* mobile login page end  */
+
+
+/* login email password start */
+
+.emailpasswordpg {
+    display: none;
+}
+
+.mailotpdis {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+.lftmlpassarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.mailpasspadd {
+    padding: 0 30px;
+}
+
+.mailpasslog {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.mailpassmail {
+    color: gray;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.mailpasstxt {
+    color: var(--border);
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.clsmailpassdiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.clsmailpassinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.clsmailpassinput:focus-visible {
+    outline: 0px;
+}
+
+.emailpasslgnbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mailpasscodetxt {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 11px;
+    border-radius: 7px;
+    color: gray;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.clsemailpasscont {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.mailforpasstxt {
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* login email password end */
+
+
+/* login to account page start */
+
+.logintoaccount {
+    display: none;
+}
+
+.lgnotpdis {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+.lftlgnpassarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.lgnpasspadd {
+    padding: 0 30px;
+}
+
+.lgnpasslog {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.lgnpassmail {
+    color: gray;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.lgnpasstxt {
+    color: var(--border);
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.clslgnpassdiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.clslgnpassinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.clslgnpassinput:focus-visible {
+    outline: 0px;
+}
+
+.lgnpasslgnbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lgnpasscodetxt {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 11px;
+    border-radius: 7px;
+    color: gray;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.lgnrettxt {
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* login to account page end */
+
+
+/* finish login page start */
+
+.finshloginpg {
+    display: none;
+}
+
+.fnshlogdis {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+.lftfnshlogarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.fnshlogpadd {
+    padding: 0 30px;
+}
+
+.fnshlogtxt {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.fnshlogmail {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+.alrtmsgdiv {
+    display: none;
+}
+
+.fnshlogcodetxt {
+    background-color: #ffe2e2;
+    padding: 10px;
+    border-radius: 7px;
+    color: #ff6565;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alrticon {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.fnshtxt {
+    color: var(--border);
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.clfnshlogdiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.clsfnshloginput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.clsfnshloginput:focus-visible {
+    outline: 0px;
+}
+
+.fnshlogconbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fnshgetcode {
+    color: gray;
+    font-size: 12px;
+}
+
+.fnshlogfrgttxt {
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.fnshlogdnone {
+    display: none;
+}
+
+.clsfnshlogcont {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+/* finish login page end */
+
+
+
+
+
+/* forget password page start */
+
+.forgetpassword {
+    display: none;
+}
+
+.frgtpassdisp {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+.lftfrgtpassarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.frgtpassdiv {
+    padding: 0 30px;
+}
+
+.frgtpasstxt {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.frgtpassmsg {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+.frgtpassmobtxt {
+    color: var(--border);
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.clsfrgtpassdiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.clsfrgtpassinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.clsfrgtpassinput:focus-visible {
+    outline: 0px;
+}
+
+.frgtpasscontbtn {
+    margin: 30px 0;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* forget password page end */
+
+
+/* otp code page start */
+
+.otpcodepage {
+    display: none;
+}
+
+.otppgdisp {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+.lftotppgarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.otppgpadd {
+    padding: 0 30px;
+}
+
+.otpmobmail {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+.otppgknw {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.otppgtxt {
+    color: var(--border);
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.clsotpgdiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.clsotppginput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.clsotppginput:focus-visible {
+    outline: 0px;
+}
+
+.otppgcontbtn {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.otpresndtxt {
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* otp code page end */
+
+
+/* reset password page start  */
+
+.resetpasswordpg {
+    display: none;
+}
+
+.resetpassdisp {
+    height: 100vh;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+}
+
+.lftmailpassarrw {
+    height: 25px;
+    padding-left: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.resetpassdiv {
+    padding: 0 30px;
+}
+
+.rsetpasstxt {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.rsetletustxt {
+    color: gray;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.newpasstxt {
+    color: var(--border);
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.clsrsetpassdiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.clsrsetpassinput {
+    border: 0;
+    width: 100%;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.clsrsetpassinput:focus-visible {
+    outline: 0px;
+}
+
+.rsetcharnumtxt {
+    color: gray;
+    font-size: 14px;
+    margin: 20px 0;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.setpassbtn {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.retlgnpgtxt {
+    color: var(--border);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* reset password page end */
+
+
+
+
+/* after login page css start */
+
+.openafterloginpage {
+    display: none;
+    height: 100vh;
+}
+
+.clsaftrproftxt {
+    padding: 10px 15px;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+}
+
+.actholdrnm {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.clsusrnmdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cusfirstlet {
+    font-size: 35px;
+    color: var(--border);
+    text-transform: uppercase;
+    background-color: var(--backgroundcolor);
+    height: 60px;
+    width: 60px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admintxt {
+    font-weight: bold;
+    color: var(--border);
+    text-transform: capitalize;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.plssign {
+    color: gray;
+    background-color: white;
+    border: 2px solid gray;
+}
+
+.addtxt {
+    color: gray;
+}
+
+.clsordrhlpdiv {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clshlpordrtxt {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    position: relative;
+    border: 1px solid #d5d5d5;
+    cursor: pointer;
+}
+
+.clsalgcntr {
+    display: flex;
+    align-items: center;
+}
+
+.clsordricon {
+    height: 20px;
+    margin: 7px 10px;
+}
+
+.clsrgtarrow {
+    height: 6px;
+    width: 6px;
+    border-top: 2px solid var(--border);
+    border-right: 2px solid var(--border);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 13px;
+}
+
+
+.clslogoutbtn {
+    margin: 0 30px;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--backgroundcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-weight: bold;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appversiontxt {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: gray;
+    font-size: 14px;
+}
+
+/* after login page css end */
+
+
+
+
+/* reset password page start  */
+
+.restpasswordpage {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+}
+
+.clsrespass {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--border);
+}
+
+.resinfotxt {
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.resenternum {
+    width: 100%;
+    border: 0px;
+    padding-left: 10px;
+    height: 15px;
+    margin: 12px 0;
+}
+
+.resenternum:focus-visible {
+    outline: 0px;
+}
+
+
+/* reset password page end  */
+
+
+
+/* ------ login page start ------ */
+
+.clsloginpage {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+}
+
+/* ------ login page end ------ */
+
+
+
+/* only mobile view allow start */
+
+.mobmaindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clsonlymob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clsonmobimg {
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+.clsmobontext {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.clsmobtryagin {
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+
+
+
+
+/* only mobile view allow end */

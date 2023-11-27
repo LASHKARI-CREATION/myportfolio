@@ -1,0 +1,99 @@
+.mySlidescls {
+    display: none
+}
+
+
+/* Slideshow container */
+.slideshowcls {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+/* Next & previous buttons */
+.clsprevbtn,
+.clsnextbtn {
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: #a8a8a8;
+    margin-right: 20px;
+}
+
+/* Position the "next button" to the right */
+.clsnextbtn {
+    right: 0;
+    margin-left: 20px;
+    margin-right: 0;
+    /* border-radius: 3px 0 0 3px; */
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.clsprevbtn:hover,
+.clsnextbtn:hover {
+    background-color: rgba(224, 224, 224, 0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+
+.dotdivcls {
+    text-align: center;
+    text-align: center;
+    padding: 12px 15px;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.clsmovingdot {
+    cursor: pointer;
+    height: 3px;
+    width: 3px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.clsactivedot,
+.clsmovingdot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.clsimgfade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes clsimgfade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .clsprevbtn,
+    .clsnextbtn,
+    .clscaptext {
+        font-size: 11px
+    }
+}

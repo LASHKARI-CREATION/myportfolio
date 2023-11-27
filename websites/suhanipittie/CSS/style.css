@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+}
+
+.container {
+    padding: 10px 50px;
+}
+
+.headerlogodiv {
+    display: flex;
+    align-items: center;
+}
+
+.logodiv {
+    width: 60%;
+    text-align: right;
+}
+
+.logodiv>img {
+    height: 60px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.svgdiv {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
+
+.svgdiv>svg {
+    width: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    fill: #313131;
+}
+
+.menulist {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.menulist>ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menulist>ul>li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.diffcolor1 {
+    color: #ffa500;
+}
+
+.diffcolor2 {
+    color: #006400;
+}
+
+
+
+
+
+
+.mySlideshow {
+    display: none;
+}
+
+.slideshowimg {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshowcontainer {
+    position: relative;
+    margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.slidedot {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activeslide {
+    background-color: #717171;
+}
+
+.bnrdots {
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+/* Fading animation */
+.fadeslide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeslide {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.collectionflx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.colldiv {
+    width: 16%;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.colldiv>img {
+    width: 100%;
+}
+
+.colldiv>p {
+    margin-top: 10px;
+}
+
+.aboutdiv {
+    margin: 30px 0;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.aboutdiv>h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.aboutdiv>h2 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.aboutdiv>p {
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #454545;
+}
+
+.celebcloset {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.celebcloset>h3 {
+    font-size: 37px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.celebcloset>p {
+    color: #666666;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.celebmaindiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.celebimgdiv {
+    width: 23%;
+    text-align: center;
+}
+
+.celebimgdiv>img {
+    width: 100%;
+}
+
+.celebimgdiv>h4 {
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 10px 0;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.celebimgdiv>p {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.shoplookdiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.shoplookimg {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+}
+
+.shoplookimg>img {
+    width: 100%;
+}
+
+.shoplookimg>p {
+    position: absolute;
+    bottom: 25px;
+    /* left: 35%; */
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.ftrflx {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.ftrdivs {
+    width: 22%;
+}
+
+.ftrdivs>h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ftrdivs>ul {
+    list-style-type: none;
+    margin-top: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.ftrdivs>ul>li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.instaimgdiv {
+    width: 20%;
+    padding: 5px;
+}
+
+.instaimgdiv>img {
+    width: 100%;
+}
+
+.newslettr {
+    display: flex;
+    margin: 10px 0 30px;
+}
+
+.newslettr>input {
+    padding: 5px 10px;
+
+}
+
+.newslettr>input:focus-visible {
+    outline: 0;
+}
+
+.newslettr>p {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-left: 0;
+    transition: color 1s ease, background-color 1s ease, border-color 1s ease;
+}
+
+.newslettr>p:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+.ftrsvg {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ftrsvg>svg {
+    width: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #4e4e4e;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mobmenu {
+    display: none;
+}
+
+.closebtn {
+    display: none;
+}
+
+.mobsidesvg {
+    display: none;
+}
+
+@media (max-width:1300px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    .mobmenu {
+        display: block;
+        width: 30%;
+    }
+
+    .mobmenu>svg {
+        width: 40px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .logodiv {
+        width: auto;
+    }
+
+    .svgdiv {
+        width: 30%;
+    }
+
+    .headerlogodiv {
+        justify-content: space-between;
+    }
+
+    .menulist {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        background: #0000007a;
+        z-index: 1;
+        justify-content: left;
+    }
+
+    .menulist>ul {
+        display: block;
+        width: 400px;
+        height: 100%;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+
+    .menulist>ul>li {
+        margin: 15px 10px;
+        font-size: 18px;
+    }
+
+    .closebtn {
+        display: block;
+        text-align: right;
+    }
+
+    .closebtn>svg {
+        width: 40px;
+        padding: 5px;
+    }
+
+    .slidedot {
+        height: 7px;
+        width: 7px;
+        margin: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .ftrflx {
+        flex-wrap: wrap;
+    }
+
+    .ftrdivs {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media (max-width:1000px) {
+    .collectionflx {
+        flex-wrap: wrap;
+    }
+
+    .colldiv {
+        width: 32%;
+    }
+}
+
+@media (max-width:900px) {
+    .celebmaindiv {
+        flex-wrap: wrap;
+    }
+
+    .celebimgdiv {
+        width: 45%;
+        padding: 10px 0;
+    }
+
+    .instaimgdiv {
+        width: 48%;
+        padding: 5px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .logodiv>img {
+        height: 40px;
+    }
+
+    .menusvghide {
+        display: none;
+    }
+
+    .svgdiv {
+        width: auto;
+    }
+
+    .mobmenu {
+        width: 16%;
+    }
+
+    .mobsidesvg {
+        display: block;
+    }
+
+    .menusvgacc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #c8c8c8;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .menusvgacc>svg {
+        width: 40px;
+        fill: #727272;
+        padding: 5px;
+    }
+
+    .colldiv>p {
+        margin-top: 10px;
+    }
+
+    .aboutdiv {
+        padding: 0 15px;
+    }
+
+    .shoplookdiv {
+        flex-wrap: wrap;
+    }
+
+    .shoplookimg {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .menulist>ul {
+        width: 100%;
+    }
+
+    .colldiv {
+        font-size: 13px;
+    }
+
+    .colldiv>p {
+        margin-top: 5px;
+    }
+
+    .aboutdiv>p {
+        margin-bottom: 15px;
+    }
+
+    .celebcloset>h3 {
+        font-size: 25px;
+    }
+
+    .celebcloset>p {
+        font-size: 16px;
+    }
+
+    .celebimgdiv>h4 {
+        font-size: 11px;
+        margin: 5px 0;
+    }
+
+    .celebimgdiv>p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .ftrdivs {
+        width: 100%;
+    }
+
+    .svgdiv {
+        padding: 0px;
+    }
+
+    .svgdiv>svg {
+        width: 20px;
+        margin: 0 5px;
+    }
+
+    .mobmenu {
+        width: auto;
+    }
+}
