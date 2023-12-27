@@ -697,7 +697,8 @@ a {
         display: block;
     }
 
-    .closemenu {
+    .closemenu ,
+    .closescrlmenu {
         display: none;
     }
 
