@@ -125,14 +125,24 @@ $(document).ready(function () {
         $(".hidemenu").show();
         $(".showmenu").hide();
         $(".closemenu").show();
-
     });
 
     $(".closemenu").click(function () {
         $(".hidemenu").hide();
         $(".showmenu").show();
         $(".closemenu").hide();
+    });
 
+    $(".showscrlmenu").click(function () {
+        $(".hidescrlmenu").show();
+        $(".showscrlmenu").hide();
+        $(".closescrlmenu").show();
+    });
+
+    $(".closescrlmenu").click(function () {
+        $(".hidescrlmenu").hide();
+        $(".showscrlmenu").show();
+        $(".closescrlmenu").hide();
     });
 });
 

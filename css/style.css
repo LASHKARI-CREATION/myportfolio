@@ -27,6 +27,17 @@ a {
     z-index: 2;
 }
 
+.scrlbgwhite{
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.scrollshowdiv{
+    display: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -660,7 +671,8 @@ a {
         position: relative;
     }
 
-    .hidemenu {
+    .hidemenu,
+    .hidescrlmenu {
         display: none;
     }
 
